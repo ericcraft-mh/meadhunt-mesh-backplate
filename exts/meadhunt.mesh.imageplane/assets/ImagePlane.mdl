@@ -1,0 +1,202 @@
+mdl 1.7;
+import ::anno::*;
+import ::base::*;
+import ::df::*;
+import ::OmniSurface::OmniImage::*;
+import ::tex::*;
+
+base::texture_return multiply_colors(
+    color color_1 = color(1.0, 1.0, 1.0),
+    color color_2 = color(.5, .5, .5),
+    float weight  = 1.0
+) [[ 
+    anno::hidden() 
+]]
+{
+    return base::blend_color_layers(
+                layers: base::color_layer[](
+                    base::color_layer(
+                        layer_color:    color_2,
+                        weight:         weight,
+                        mode:           base::color_layer_multiply
+                        )),
+                base: color_1
+    );
+}
+export material ImagePlane(
+    uniform texture_2d emission_image = texture_2d() [[ 
+        anno::display_name("Backplate"),
+        anno::in_group("Image Plane")
+    ]],
+    color emission_color = color(1.)
+    [[
+        anno::display_name("Image Tint"),
+        anno::hard_range(0.0f, 1.0f),
+        anno::in_group("Image Plane")
+    ]],
+    float intensity = 1
+    [[
+        anno::display_name("Intensity"),
+        anno::hard_range(0.0f, 5.0f),
+        anno::in_group("Image Plane")
+    ]],
+    float mult = 23000
+    [[
+        anno::display_name("Multiplier"),
+        anno::hard_range(0.0f, 50000.0f),
+        anno::in_group("Image Plane"),
+        anno::hidden()
+    ]],
+    uniform bool dbl_sided = false
+    [[
+        anno::display_name("Double Sided"),
+        anno::in_group("Image Plane")
+    ]],
+
+    //
+    //::UVW::simplify UI by hiding parameters users don't need to edit
+    //
+    uniform base::texture_coordinate_system uvw_texture_coordinate_system = 
+        base::texture_coordinate_uvw [[
+        anno::display_name("Texture Coordinate"),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]],
+    uniform int uvw_uv_set = 0 [[
+        anno::display_name("UV Set"),
+        anno::in_group("UVW Coordinates"),
+        anno::hard_range(0, 4),
+        anno::hidden()
+    ]],
+    uniform bool uvw_ignore_missing_textures = false [[
+        anno::display_name("Ignore Missing Images"),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]],
+    color uvw_missing_texture_color = color(0.0, 0.0, 0.0) [[
+        anno::display_name("Missing Image Color"),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]],
+    uniform bool uvw_use_uv_coords = false [[
+        anno::display_name("Use UV Coords"),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]],
+    float2 uvw_uv_coords = float2(0.0) [[
+        anno::display_name("UV Coords"),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]],
+    uniform float uvw_s_offset = 0.0f [[
+        anno::display_name("Offset U"),
+        anno::in_group("UVW Coordinates"),
+        anno::soft_range(-1.0f, 1.0f)
+    ]],
+    uniform float uvw_t_offset = 0.0f [[
+        anno::display_name("Offset V"),
+        anno::in_group("UVW Coordinates"),
+        anno::soft_range(-1.0f, 1.0f)
+    ]],
+    uniform ::OmniSurface::OmniImage::wrap_mode uvw_s_wrap = 
+        ::OmniSurface::OmniImage::wrap_periodic [[
+        anno::display_name("Wrap U"),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]],
+    uniform ::OmniSurface::OmniImage::wrap_mode uvw_t_wrap = 
+        ::OmniSurface::OmniImage::wrap_periodic [[
+        anno::display_name("Wrap V"),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]],
+    uniform float uvw_s_scale = 1.0f [[
+        anno::display_name("Scale U"),
+        anno::in_group("UVW Coordinates"),
+        anno::soft_range(0.0f, 2.0f)
+    ]],
+    uniform float uvw_t_scale = 1.0f [[
+        anno::display_name("Scale V"),
+        anno::in_group("UVW Coordinates"),
+        anno::soft_range(0.0f, 2.0f)
+    ]],
+    uniform bool uvw_s_flip = false [[
+        anno::display_name("Flip U"),
+        anno::in_group("UVW Coordinates")
+    ]],
+    uniform bool uvw_t_flip = false [[
+        anno::display_name("Flip V"),
+        anno::in_group("UVW Coordinates")
+    ]],
+    uniform bool uvw_swap_st = false [[
+        anno::display_name("Swap UV"),
+        anno::in_group("UVW Coordinates")
+    ]],
+
+    //::Projection Coordinates (Local / World)::simplify UI by hiding parameters users don't need to edit
+
+    uniform ::OmniSurface::OmniImage::projection_mode uvw_projection_mode = 
+        ::OmniSurface::OmniImage::projection_planar [[
+        anno::display_name("Projection Mode"),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]],
+    uniform float3 uvw_projection_translate = float3(0.0) [[
+        anno::display_name("Translate"),
+        anno::description("Translate the projected texture."),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]],
+    uniform float3 uvw_projection_rotate = float3(0.0) [[
+        anno::display_name("Rotate"),
+        anno::description("Rotate the projected texture."),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]],
+    uniform float3 uvw_projection_scale = float3(1.0) [[
+        anno::display_name("Scale"),
+        anno::description("Scale the projected texture."),
+        anno::in_group("UVW Coordinates"),
+        anno::hidden()
+    ]]
+) = let {
+    base::texture_coordinate_info texture_coordinate_info = ::OmniSurface::OmniImage::compute_texture_coordinate_2(
+        uvw_texture_coordinate_system,
+        uvw_uv_set,
+        uvw_s_offset,
+        uvw_t_offset,
+        uvw_s_scale,
+        uvw_t_scale,
+        uvw_s_flip,
+        uvw_t_flip,
+        uvw_swap_st,
+        uvw_projection_mode,
+        uvw_projection_translate,
+        uvw_projection_rotate,
+        uvw_projection_scale
+    );
+    color emission_color_image = multiply_colors(::OmniSurface::OmniImage::texture_lookup_2(
+        emission_image,
+        uvw_ignore_missing_textures,
+        uvw_missing_texture_color,
+        uvw_use_uv_coords,
+        uvw_uv_coords,
+        uvw_s_wrap,
+        uvw_t_wrap,
+        texture_coordinate_info
+    ).tint , emission_color).tint;
+
+    color emission_tex = tex::texture_isvalid(emission_image) ? emission_color_image * 0.125 : emission_color;
+    material_emission emission_mat(
+        emission: df::diffuse_edf(),
+        intensity: intensity * mult * emission_tex
+    );
+    material_surface emission_surf(
+        emission: emission_mat
+    );
+} in material(
+    surface: emission_surf,
+    backface: emission_surf,
+    thin_walled: dbl_sided
+);
+
