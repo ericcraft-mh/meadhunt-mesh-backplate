@@ -2,6 +2,7 @@ mdl 1.7;
 import ::anno::*;
 import ::base::*;
 import ::df::*;
+import ::limits::*;
 import ::OmniSurface::OmniImage::*;
 import ::tex::*;
 
@@ -34,10 +35,11 @@ export material ImagePlane(
         anno::hard_range(0.0f, 1.0f),
         anno::in_group("Image Plane")
     ]],
-    float intensity = 1
+    float intensity = float(1)
     [[
         anno::display_name("Intensity"),
-        anno::hard_range(0.0f, 5.0f),
+        anno::soft_range(0.0f, 5.0f),
+        anno::hard_range(0.0f, limits::FLOAT_MAX),
         anno::in_group("Image Plane")
     ]],
     float mult = 23000
