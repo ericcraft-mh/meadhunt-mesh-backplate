@@ -48,7 +48,7 @@ class ExtensionWindow(ui.Window):
                     with ui.HStack():
                         ui.Label("Name:", name="namelabel", width=self.LABEL_WIDTH)
                         self._camera_name = ui.StringField(name="namefield", height=self.BUTTON_SIZE).model
-                        self._camera_name.set_value("ImagePlane")
+                        self._camera_name.set_value("BackPlate")
                     # ui.Spacer(height=0)
                     # self.COMBO_MODE = self._create_combo("Mode:", self.MODE_LIST, 0)
                     # self.COMBO_MODE.enabled = False

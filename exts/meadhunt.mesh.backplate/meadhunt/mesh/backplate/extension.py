@@ -6,14 +6,14 @@ from .window import ExtensionWindow
 # Any class derived from `omni.ext.IExt` in top level module (defined in `python.modules` of `extension.toml`) will be
 # instantiated when extension gets enabled and `on_startup(ext_id)` will be called. Later when extension gets disabled
 # on_shutdown() is called.
-class ImagePlane(omni.ext.IExt):
+class BackPlate(omni.ext.IExt):
     # ext_id is current extension id. It can be used with extension manager to query additional information, like where
     # this extension is located on filesystem.
 
-    WINDOW_TITLE = "Image Plane"
+    WINDOW_TITLE = "BackPlate"
 
     def on_startup(self, ext_id):
-        print("[meadhunt.mesh.imageplane] Image Plane startup")
+        print("[meadhunt.mesh.backplate] BackPlate startup")
 
         self._menu_path = f"Window/Mead & Hunt/{self.WINDOW_TITLE}"
         self._window = None
@@ -22,7 +22,7 @@ class ImagePlane(omni.ext.IExt):
         omni.kit.ui.get_editor_menu().set_value(self._menu_path, True)
 
     def on_shutdown(self):
-        print("[meadhunt.mesh.imageplane] Image Plane shutdown")
+        print("[meadhunt.mesh.backplate] BackPlate shutdown")
 
         if self._window:
             self._window.hide()

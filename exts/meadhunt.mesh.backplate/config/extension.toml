@@ -3,20 +3,20 @@
 version = "0.0.1"
 
 # The title and description fields are primarily for displaying extension info in UI
-title = "Mead & Hunt Image Plane"
-description="Image Plane that attaches to camera to place images in viewport"
+title = "Mead & Hunt BackPlate"
+description="BackPlate that attaches to camera to place images in viewport"
 
 # Path (relative to the root) or content of readme markdown file for UI.
 readme  = "docs/README.md"
 
 # URL of the extension source repository.
-repository = "https://github.com/ericcraft-mh/meadhunt-mesh-imageplane"
+repository = "https://github.com/ericcraft-mh/meadhunt-mesh-backplate"
 
 # One of categories for UI.
 category = "Other"
 
 # Keywords for the extension
-keywords = ["kit", "image plane"]
+keywords = ["kit", "backplate"]
 
 
 # Use omni.ui to build simple UI
@@ -25,4 +25,4 @@ keywords = ["kit", "image plane"]
 
 # Main python module this extension provides, it will be publicly available as "import omni.hello.world".
 [[python.module]]
-name = "meadhunt.mesh.imageplane"
+name = "meadhunt.mesh.backplate"
