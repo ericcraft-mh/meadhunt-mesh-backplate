@@ -15,7 +15,7 @@ class ImagePlane(omni.ext.IExt):
     def on_startup(self, ext_id):
         print("[meadhunt.mesh.imageplane] Image Plane startup")
 
-        self._menu_path = f"Window/{self.WINDOW_TITLE}"
+        self._menu_path = f"Window/Mead & Hunt/{self.WINDOW_TITLE}"
         self._window = None
         self._menu = omni.kit.ui.get_editor_menu().add_item(self._menu_path, self._on_menu_click, True)
         self._window = ExtensionWindow(self.WINDOW_TITLE, 300, 300, self._menu_path)

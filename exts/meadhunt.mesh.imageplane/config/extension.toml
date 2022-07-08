@@ -3,20 +3,20 @@
 version = "0.0.1"
 
 # The title and description fields are primarily for displaying extension info in UI
-title = "Image Plane"
+title = "Mead & Hunt Image Plane"
 description="Image Plane that attaches to camera to place images in viewport"
 
 # Path (relative to the root) or content of readme markdown file for UI.
 readme  = "docs/README.md"
 
 # URL of the extension source repository.
-repository = ""
+repository = "https://github.com/ericcraft-mh/meadhunt-mesh-imageplane"
 
 # One of categories for UI.
 category = "Other"
 
 # Keywords for the extension
-keywords = ["kit", "example"]
+keywords = ["kit", "image plane"]
 
 
 # Use omni.ui to build simple UI
