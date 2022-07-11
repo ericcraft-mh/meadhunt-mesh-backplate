@@ -27,7 +27,6 @@ class BackPlate(omni.ext.IExt):
         if self._window:
             self._window.hide()
             self._window.destroy()
-            self._window = None   
 
         omni.kit.ui.get_editor_menu().remove_item(self._menu)
 
