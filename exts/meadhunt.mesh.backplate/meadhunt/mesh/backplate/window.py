@@ -3,6 +3,7 @@ from typing import List
 from pxr import Usd, UsdGeom
 import omni.kit.ui
 import omni.ui as ui
+import omni.usd
 import os
 import re
 from omni.ui import color as cl
@@ -18,6 +19,8 @@ class ExtensionWindow(ui.Window):
     COMBO_CAMS = ui.ComboBox()
     CAMS_LIST =[]
     PATHS_LIST = []
+    STAGE = omni.usd.get_context().get_stage()
+    BACKPLATE = None
 
     def __init__(self, title, win_width, win_height, menu_path):
         super().__init__(title, width=win_width, height=win_height)
@@ -29,6 +32,7 @@ class ExtensionWindow(ui.Window):
 
     def on_shutdown(self):
         if self:
+            self.hide()
             self.destroy()
             self = None
 
@@ -44,23 +48,37 @@ class ExtensionWindow(ui.Window):
         self.visible = False
 
     def _get_cameras(self):
-        camsList = []
-        pathsList = []
+        self.CAMS_LIST = []
+        self.PATHS_LIST = []
+        for prim in self.STAGE.Traverse():
+            # Get Cameras and make sure they are perspective
+            if prim.IsA(UsdGeom.Camera) and prim.GetProperty('projection').Get() == 'perspective':
+                # Create a list of names
+                self.CAMS_LIST.append(prim.GetName())
+                # Create a list of paths
+                self.PATHS_LIST.append(prim.GetPath())
 
-        stage = omni.usd.get_context().get_stage()
-
-        for prim in stage.Traverse():
-            if prim.IsA(UsdGeom.Camera):
-                camsList.append(prim.GetName())
-                pathsList.append(prim.GetPath())
-        return [camsList,pathsList]
-
-    def _fill_combo(self, combo):
-        camList, pathList = self._get_cameras()
+    def _fill_combo(self, combo:ui.ComboBox):
+        # Get the current index of the selected item
+        currentIndex = combo.model.get_item_value_model().as_int
+        # # Get the current name of the item
+        currentItem = self.CAMS_LIST[currentIndex]
+        self._get_cameras()
+        # Get the new Index based on the name
+        # Use try except in case camera has been deleted
+        # Fallback to 0 if not in the list
+        try:
+            newIndex = self.CAMS_LIST.index(currentItem)
+        except ValueError:
+            newIndex = 0
+        # Clear the list
         for items in combo.model.get_item_children():
             combo.model.remove_item(items)
-        for item in camList:
+        # Rebuild the list with the new list
+        for item in self.CAMS_LIST:
             combo.model.append_child_item(None, ui.SimpleStringModel(item))
+        # Set the new index value so the selection stays with the name not the index value
+        combo.model.get_item_value_model().set_value(newIndex)
 
     def _build_ui(self):
         with self.frame:
@@ -69,8 +87,9 @@ class ExtensionWindow(ui.Window):
                     # ui.Spacer(height=0)
                     # self._create_path("Texture:", "")
                     # ui.Spacer(height=0)
-                    self.CAMS_LIST, self.PATHS_LIST = self._get_cameras()
+                    self._get_cameras()
                     self.COMBO_CAMS = self._create_combo("Cameras:", self.CAMS_LIST, 0)
+                    self.COMBO_CAMS.set_mouse_pressed_fn(lambda a,b,c,d:self._fill_combo(self.COMBO_CAMS))
                     # self.COMBO_CAMS.model.add_item_changed_fn((self._fill_combo(m)),None)
                     # with ui.HStack():
                     #     ui.Label("Camera:", name="scenelabel", width=self.LABEL_WIDTH)
@@ -88,9 +107,10 @@ class ExtensionWindow(ui.Window):
                     # # ui.Spacer(height=0)
                     # self.COMBO_FIT = self._create_combo("Timeline:", self.FIT_LIST, 0)
                     # self.COMBO_FIT.enabled = True
-                self.btn_update = ui.Button("Refresh Cameras", name="BtnRefresh", clicked_fn=lambda: self._fill_combo(self.COMBO_CAMS))
-                self.btn_click = ui.Button("Set BackPlate", name="BtnClick", clicked_fn=lambda: self._on_click(), style={"color": cl.shade("aqua", transparent=0x20FFFFFF, white=0xFFFFFFFF)}, enabled=False)
-                ui.set_shade("transparent")
+                # self.btn_update = ui.Button("Refresh Cameras", name="BtnRefresh", clicked_fn=lambda: self._fill_combo(self.COMBO_CAMS))
+                # self.btn_click = ui.Button("Set BackPlate", name="BtnClick", clicked_fn=lambda: self._on_click(), style={"color": cl.shade("aqua", transparent=0x20FFFFFF, white=0xFFFFFFFF)}, enabled=False)
+                # ui.set_shade("white")
+                self.btn_click = ui.Button("Set BackPlate", name="BtnClick", clicked_fn=lambda: self._on_click())
                 # ui.Spacer(height=2)
                 # with ui.CollapsableFrame(title="About", collapsed=True, alignment=ui.Alignment.CENTER):
                 #     with ui.VStack():
@@ -127,16 +147,13 @@ class ExtensionWindow(ui.Window):
         return combo
  
     def _on_click(self):
-        mode_item = self.COMBO_MODE.model.get_item_value_model().as_int
-        method_item = self.COMBO_METHOD.model.get_item_value_model().as_int
-        fit_item = self.COMBO_FIT.model.get_item_value_model().as_int
-        # if self._valid_xml:
-        #     xml_data(self.DEBUG, self._file_return, [mode_item,method_item,fit_item], self._scene_path.get_value_as_string(), self._camera_name.get_value_as_string()).parse_xml()
-        # else:
-        #     print("Please select a valid Enscape XML File!")
-        # if self.DEBUG:
-        #     print(f"Selected Item: {method_item} | {self.METHOD_LIST[method_item]}")
-    
+        if self.BACKPLATE == None:
+            self.BACKPLATE = '/World/BackPlate'
+            created, planePath = omni.kit.commands.execute('CreateMeshPrimWithDefaultXform',prim_type='Plane')
+            omni.kit.commands.execute('MovePrim',path_from=planePath,path_to=self.BACKPLATE)
+        if self.BACKPLATE != None:
+            print(self.BACKPLATE)
+        
     def _fix_path(self, str):
         txt = re.split(r'[/\\]',str)
         return '/'.join(txt)
