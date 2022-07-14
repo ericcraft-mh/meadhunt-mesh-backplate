@@ -10,8 +10,9 @@ base::texture_return multiply_colors(
     color color_1 = color(1.0, 1.0, 1.0),
     color color_2 = color(.5, .5, .5),
 	float weight  = 1.0
-) [[ 
-    anno::hidden() 
+)
+[[ 
+    anno::hidden()
 ]]
 {
     return base::blend_color_layers(
@@ -26,7 +27,8 @@ base::texture_return multiply_colors(
 }
 
 export material BackPlate(
-    uniform texture_2d emission_image = texture_2d() [[ 
+    uniform texture_2d emission_image = texture_2d()
+    [[ 
         anno::display_name("BackPlate"),
         anno::in_group("BackPlate")
     ]],
@@ -60,35 +62,42 @@ export material BackPlate(
     //::UVW::simplify UI by hiding parameters users don't need to edit
     //
 
-    uniform float uvw_s_offset = 0.0f [[
+    uniform float uvw_s_offset = 0.0f
+    [[
         anno::display_name("Offset U"),
         anno::in_group("UVW Coordinates"),
         anno::soft_range(-1.0f, 1.0f)
     ]],
-    uniform float uvw_t_offset = 0.0f [[
+    uniform float uvw_t_offset = 0.0f
+    [[
         anno::display_name("Offset V"),
         anno::in_group("UVW Coordinates"),
         anno::soft_range(-1.0f, 1.0f)
     ]],
-    uniform float uvw_s_scale = 1.0f [[
+    uniform float uvw_s_scale = 1.0f
+    [[
         anno::display_name("Scale U"),
         anno::in_group("UVW Coordinates"),
         anno::soft_range(0.0f, 2.0f)
     ]],
-    uniform float uvw_t_scale = 1.0f [[
+    uniform float uvw_t_scale = 1.0f
+    [[
         anno::display_name("Scale V"),
         anno::in_group("UVW Coordinates"),
         anno::soft_range(0.0f, 2.0f)
     ]],
-    uniform bool uvw_s_flip = false [[
+    uniform bool uvw_s_flip = false
+    [[
         anno::display_name("Flip U"),
         anno::in_group("UVW Coordinates")
     ]],
-    uniform bool uvw_t_flip = false [[
+    uniform bool uvw_t_flip = false
+    [[
         anno::display_name("Flip V"),
         anno::in_group("UVW Coordinates")
     ]],
-    uniform bool uvw_swap_st = false [[
+    uniform bool uvw_swap_st = false
+    [[
         anno::display_name("Swap UV"),
         anno::in_group("UVW Coordinates")
     ]]

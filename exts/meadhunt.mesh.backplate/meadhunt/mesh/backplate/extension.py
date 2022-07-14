@@ -11,6 +11,9 @@ class BackPlate(omni.ext.IExt):
     # this extension is located on filesystem.
 
     WINDOW_TITLE = "BackPlate"
+    
+    def __init__(self):
+        pass
 
     def on_startup(self, ext_id):
         print("[meadhunt.mesh.backplate] BackPlate startup")
@@ -27,6 +30,7 @@ class BackPlate(omni.ext.IExt):
         if self._window:
             self._window.hide()
             self._window.destroy()
+            self._window = None
 
         omni.kit.ui.get_editor_menu().remove_item(self._menu)
 
@@ -34,7 +38,7 @@ class BackPlate(omni.ext.IExt):
         """Handles showing and hiding the window from the 'Windows' menu."""
         if toggled:
             if self._window is None:
-                self._window = ExtensionWindow(self.WINDOW_TITLE, 300, 300, self._menu_path)
+                self._window = ExtensionWindow(self.WINDOW_TITLE, 300, 300, menu)
             else:
                 self._window.show()
         else:
