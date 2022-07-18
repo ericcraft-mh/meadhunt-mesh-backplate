@@ -21,7 +21,7 @@ class BackPlate(omni.ext.IExt):
         self._menu_path = f"Window/Mead & Hunt/{self.WINDOW_TITLE}"
         self._window = None
         self._menu = omni.kit.ui.get_editor_menu().add_item(self._menu_path, self._on_menu_click, True)
-        self._window = ExtensionWindow(self.WINDOW_TITLE, 300, 300, self._menu_path)
+        self._window = ExtensionWindow(self.WINDOW_TITLE, 330, 220, self._menu_path)
         omni.kit.ui.get_editor_menu().set_value(self._menu_path, True)
 
     def on_shutdown(self):
@@ -38,13 +38,14 @@ class BackPlate(omni.ext.IExt):
         """Handles showing and hiding the window from the 'Windows' menu."""
         if toggled:
             if self._window is None:
-                self._window = ExtensionWindow(self.WINDOW_TITLE, 300, 300, menu)
+                self._window = ExtensionWindow(self.WINDOW_TITLE, 330, 220, menu)
             else:
                 self._window.show()
         else:
             if self._window:
                 self._window.hide()
                 self._window.destroy()
+                self._window = None
 
     def destroy(self):
         if self._window:
