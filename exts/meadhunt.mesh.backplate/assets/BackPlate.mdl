@@ -1,30 +1,10 @@
 mdl 1.7;
 import ::anno::*;
 import ::base::*;
-import ::df::*;
+import ::df::diffuse_edf;
 import ::limits::*;
 import ::OmniSurface::OmniImage::*;
 import ::tex::*;
-
-base::texture_return multiply_colors(
-    color color_1 = color(1.0, 1.0, 1.0),
-    color color_2 = color(.5, .5, .5),
-	float weight  = 1.0
-)
-[[ 
-    anno::hidden()
-]]
-{
-    return base::blend_color_layers(
-        layers: base::color_layer[](
-            base::color_layer(
-                layer_color:    color_2,
-                weight:         weight,
-                mode:           base::color_layer_multiply
-                )),
-        base: color_1
-    );
-}
 
 export material BackPlate(
     uniform texture_2d emission_image = texture_2d()
@@ -127,7 +107,16 @@ export material BackPlate(
         ::OmniSurface::OmniImage::wrap_mode(::OmniSurface::OmniImage::wrap_periodic),
         texture_coordinate_info
     ).tint;
-    color emission_color_image = multiply_colors(emission_texture, emission_color, 1.0).tint;
+    color emission_color_image = base::blend_color_layers(
+        base: emission_texture,
+        layers: base::color_layer[](
+            base::color_layer(
+                layer_color: emission_color,
+                weight: 1.0,
+                mode: base::color_layer_multiply
+            )
+        )
+    ).tint;
     color emission_tex = tex::texture_isvalid(emission_image) ? emission_color_image * 0.125 : emission_color;
     material_emission emission_mat(
         emission: df::diffuse_edf(),

@@ -66,7 +66,9 @@ class ExtensionWindow(ui.Window):
             self._stage = omni.usd.get_context().get_stage()
             
     def _get_render_resolution(self):
+        # Make sure stage is set
         self._get_stage()
+        # Get scene render resolution
         renderproduct = self._stage.GetPrimAtPath(Sdf.Path('/Render/RenderProduct_Viewport'))
         view_res = renderproduct.GetAttribute('resolution').Get()
         return view_res
@@ -120,9 +122,9 @@ class ExtensionWindow(ui.Window):
         cam_prim = self._stage.GetPrimAtPath(cam_path)
         cam_focal = cam_prim.GetAttribute('focalLength').Get()
         cam_hAperture = cam_prim.GetAttribute('horizontalAperture').Get()
-        cam_vAperture = cam_prim.GetAttribute('verticalAperture').Get()
+        # cam_vAperture = cam_prim.GetAttribute('verticalAperture').Get()
         hfov = math.tan(math.atan(cam_hAperture/(cam_focal*2.0)))
-        vfov = math.tan(math.atan(hfov/(cam_hAperture/cam_vAperture)))
+        # vfov = math.tan(math.atan(hfov/(cam_hAperture/cam_vAperture)))
         rwidth = self._get_render_resolution()[0]
         rheight = self._get_render_resolution()[1]
         resaspect = rwidth/rheight
