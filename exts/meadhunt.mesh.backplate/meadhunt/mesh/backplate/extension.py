@@ -1,3 +1,4 @@
+__all__ = ["BackPlate"]
 import omni.ext
 import omni.ui as ui
 import omni.kit.ui
