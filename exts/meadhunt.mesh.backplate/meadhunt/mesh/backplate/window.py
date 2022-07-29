@@ -35,8 +35,8 @@ class ExtensionWindow(ui.Window):
         self._stage = None
         self._get_stage()
         self.set_visibility_changed_fn(self._on_visibility_changed)
-        self._get_cameras()
-        self._get_render_resolution()
+        if self._stage != None:
+            self._fill_combo(self.COMBO_CAMS)
         self._build_ui()
 
     def on_shutdown(self):
@@ -47,8 +47,8 @@ class ExtensionWindow(ui.Window):
 
     def on_startup(self):
         self._get_stage()
-        self._get_cameras()
-        self._get_render_resolution()
+        if self._stage != None:
+            self._fill_combo(self.COMBO_CAMS)
 
     def destroy(self):
         if self:

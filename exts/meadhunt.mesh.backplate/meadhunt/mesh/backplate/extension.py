@@ -22,8 +22,7 @@ class BackPlate(omni.ext.IExt):
         self._menu_path = f"Window/Mead & Hunt/{self.WINDOW_TITLE}"
         self._window = None
         self._menu = omni.kit.ui.get_editor_menu().add_item(self._menu_path, self._on_menu_click, True)
-        self._window = ExtensionWindow(self.WINDOW_TITLE, 330, 220, self._menu_path)
-        omni.kit.ui.get_editor_menu().set_value(self._menu_path, True)
+        omni.kit.ui.get_editor_menu().set_value(self._menu_path, False)
 
     def on_shutdown(self):
         print("[meadhunt.mesh.backplate] BackPlate shutdown")
@@ -40,6 +39,7 @@ class BackPlate(omni.ext.IExt):
         if toggled:
             if self._window is None:
                 self._window = ExtensionWindow(self.WINDOW_TITLE, 330, 220, menu)
+                self._window._fill_combo(self._window.COMBO_CAMS)
             else:
                 self._window.show()
         else:
