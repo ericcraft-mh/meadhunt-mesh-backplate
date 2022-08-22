@@ -1,0 +1,1712 @@
+2022-08-10 14:58:46  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:46  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:46  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:46  [Error] [omni.ui.python] 
+2022-08-10 14:58:46  [Error] [omni.ui.python] At:
+2022-08-10 14:58:46  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:46  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:46  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:46  [Error] [omni.ui.python] 
+2022-08-10 14:58:46  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:46  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:46  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:46  [Error] [omni.ui.python] 
+2022-08-10 14:58:46  [Error] [omni.ui.python] At:
+2022-08-10 14:58:46  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:46  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:46  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:46  [Error] [omni.ui.python] 
+2022-08-10 14:58:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:53  [Error] [omni.ui.python] 
+2022-08-10 14:58:53  [Error] [omni.ui.python] At:
+2022-08-10 14:58:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:53  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:54  [Error] [omni.ui.python] At:
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:54  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:55  [Error] [omni.ui.python] At:
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:55  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:56  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:56  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] At:
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:56  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:56  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] At:
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:56  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:56  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] At:
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:56  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:56  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] At:
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:56  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:56  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] At:
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:56  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:56  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] At:
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:56  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:56  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] At:
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:56  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:56  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] At:
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:56  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:56  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] At:
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:56  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:56  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:56  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:56  [Error] [omni.ui.python] At:
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:56  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:56  [Error] [omni.ui.python] 
+2022-08-10 14:58:59  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:59  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:59  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:59  [Error] [omni.ui.python] 
+2022-08-10 14:58:59  [Error] [omni.ui.python] At:
+2022-08-10 14:58:59  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:59  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:59  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:59  [Error] [omni.ui.python] 
+2022-08-10 14:58:59  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:59  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:59  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:59  [Error] [omni.ui.python] 
+2022-08-10 14:58:59  [Error] [omni.ui.python] At:
+2022-08-10 14:58:59  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:59  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:59  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:59  [Error] [omni.ui.python] 
+2022-08-10 14:58:59  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:58:59  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:58:59  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:58:59  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:58:59  [Error] [omni.ui.python] 
+2022-08-10 14:58:59  [Error] [omni.ui.python] At:
+2022-08-10 14:58:59  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:58:59  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:58:59  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:58:59  [Error] [omni.ui.python] 
+2022-08-10 14:59:00  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:59:00  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:59:00  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:59:00  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:59:00  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:59:00  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:59:00  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:59:00  [Error] [omni.ui.python] 
+2022-08-10 14:59:00  [Error] [omni.ui.python] At:
+2022-08-10 14:59:00  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:59:00  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:59:00  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:59:00  [Error] [omni.ui.python] 
+2022-08-10 14:59:00  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 14:59:00  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 14:59:00  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 14:59:00  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 14:59:00  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 14:59:00  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 14:59:00  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 14:59:00  [Error] [omni.ui.python] 
+2022-08-10 14:59:00  [Error] [omni.ui.python] At:
+2022-08-10 14:59:00  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 14:59:00  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 14:59:00  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 14:59:00  [Error] [omni.ui.python] 
+2022-08-10 15:02:26  [Error] [omni.ui.python] TypeError: unsupported operand type(s) for *: 'NoneType' and 'float'
+2022-08-10 15:02:26  [Error] [omni.ui.python] 
+2022-08-10 15:02:26  [Error] [omni.ui.python] At:
+2022-08-10 15:02:26  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(126): _set_scale
+2022-08-10 15:02:26  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:02:26  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(167): <lambda>
+2022-08-10 15:02:26  [Error] [omni.ui.python] 
+2022-08-10 15:02:33  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:02:33  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:02:33  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:02:33  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:02:33  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:02:33  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:02:33  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:02:33  [Error] [omni.ui.python] 
+2022-08-10 15:02:33  [Error] [omni.ui.python] At:
+2022-08-10 15:02:33  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:02:33  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:02:33  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(167): <lambda>
+2022-08-10 15:02:33  [Error] [omni.ui.python] 
+2022-08-10 15:02:38  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:02:38  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:02:38  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:02:38  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:02:38  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:02:38  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:02:38  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:02:38  [Error] [omni.ui.python] 
+2022-08-10 15:02:38  [Error] [omni.ui.python] At:
+2022-08-10 15:02:38  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:02:38  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:02:38  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(167): <lambda>
+2022-08-10 15:02:38  [Error] [omni.ui.python] 
+2022-08-10 15:03:05  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:03:05  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:03:05  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:03:05  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:03:05  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:03:05  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:03:05  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:03:05  [Error] [omni.ui.python] 
+2022-08-10 15:03:05  [Error] [omni.ui.python] At:
+2022-08-10 15:03:05  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:03:05  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:03:05  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(165): <lambda>
+2022-08-10 15:03:05  [Error] [omni.ui.python] 
+
+
+2022-08-10 15:07:46  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:46  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:46  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:46  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:46  [Error] [omni.ui.python] 
+2022-08-10 15:07:46  [Error] [omni.ui.python] At:
+2022-08-10 15:07:46  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:46  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:46  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(167): <lambda>
+2022-08-10 15:07:46  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:53  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:53  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:53  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:53  [Error] [omni.ui.python] At:
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:53  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:53  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:54  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:54  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:54  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:54  [Error] [omni.ui.python] At:
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:54  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:54  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] ArgumentError: Python argument types in
+2022-08-10 15:07:55  [Error] [omni.ui.python]     Shader.__init__(Shader, NoneType)
+2022-08-10 15:07:55  [Error] [omni.ui.python] did not match C++ signature:
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdShadeConnectableAPI connectable)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdSchemaBase schemaObj)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64, class pxrInternal_v0_20__pxrReserved__::UsdPrim prim)
+2022-08-10 15:07:55  [Error] [omni.ui.python]     __init__(struct _object * __ptr64)
+2022-08-10 15:07:55  [Error] [omni.ui.python] 
+2022-08-10 15:07:55  [Error] [omni.ui.python] At:
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(140): _set_scale
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(241): _set_plane
+2022-08-10 15:07:55  [Error] [omni.ui.python]   d:\_projects\github\meadhunt-mesh-backplate\exts\meadhunt.mesh.backplate\meadhunt\mesh\backplate\window.py(181): <lambda>
+2022-08-10 15:07:55  [Error] [omni.ui.python] 

@@ -4,8 +4,10 @@ import re
 import math
 from PIL import Image
 
-from pxr import Usd, UsdGeom, Sdf, UsdShade
+from pxr import Usd, UsdGeom, Sdf, UsdShade, Tf
 from pxr.Gf import Vec3d
+
+import carb.tokens
 
 import omni.kit.ui
 import omni.ui as ui
@@ -77,8 +79,7 @@ class ExtensionWindow(ui.Window):
         # Create empty lists to add cameras and prim paths to
         self.CAMS_LIST = []
         self.PATHS_LIST = []
-        # Safety check maket sure there is a self._stage
-        # print('self._stage: ',self._stage)
+        # Safety check make sure there is a self._stage
         self._get_stage()
         for prim in self._stage.Traverse():
             # Get Cameras and make sure they are perspective
@@ -136,24 +137,25 @@ class ExtensionWindow(ui.Window):
             mtlname = self._backplate_name.get_value_as_string()
             mtlpath = f'/World/Looks/{mtlname}'
             mtlprim = self._stage.GetPrimAtPath(mtlpath)
-            shaderprim = omni.usd.get_shader_from_material(mtlprim)
-            inputs = UsdShade.Shader(shaderprim).GetInputs()
-            for input in inputs:
-                if input.GetBaseName() == 'emission_image' and input.Get().path != '':
-                    img = Image.open(input.Get().path)
+            if mtlprim:
+                shaderobj = omni.usd.get_shader_from_material(mtlprim)
+                inputs = UsdShade.Shader(shaderobj).GetInputs()
+                for input in inputs:
+                    if input.GetBaseName() == 'emission_image' and input.Get().path != '':
+                        img = Image.open(input.Get().path)
         if img:
             imgw,imgh = img.size
         else:
             imgw = rwidth
             imgh = rheight
         
-        txtaspect = imgw/imgh
+        txtraspect = imgw/imgh
         xscale = (hfov*distance)/50.0
         if fit==0:
             yscale = xscale/resaspect
-            xscale *= txtaspect/resaspect
+            xscale *= txtraspect/resaspect
         else:
-            yscale = xscale/txtaspect
+            yscale = xscale/txtraspect
         return Vec3d(xscale,yscale,1.0)
 
     def _build_ui(self):
@@ -166,7 +168,7 @@ class ExtensionWindow(ui.Window):
                     self.COMBO_FIT = self._create_combo('Canvas Fill:', ['Fit Height','Fit Width'], 0)
                     self.COMBO_FIT.model.get_item_value_model().add_value_changed_fn(lambda a:self._set_plane())
                     with ui.HStack():
-                        ui.Label('Name:', name='nameLbl', width=self.LABEL_WIDTH)
+                        ui.Label('Name Root:', name='nameLbl', width=self.LABEL_WIDTH)
                         self._backplate_name = ui.StringField(name='namefield', height=self.BUTTON_SIZE).model
                         self._backplate_name.set_value('BackPlate')
                     self._texture_field = self._create_path(str='Texture:',paths='')
@@ -184,8 +186,6 @@ class ExtensionWindow(ui.Window):
 
     def _on_filter_files(self, item) -> bool:
         '''Callback to filter the choices of file names in the open or save dialog'''
-        # if self.DEBUG:
-        #     print(f'current_filter_option: {self._open_file_dialog.current_filter_option}')
         if not item or item.is_folder:
             return True
         if self._open_file_dialog.current_filter_option == 0:
@@ -225,7 +225,6 @@ class ExtensionWindow(ui.Window):
             result, oldPath = omni.kit.commands.execute('CreateMeshPrimWithDefaultXform',prim_type='Plane')
             if result:
                 self._old_prim_path = oldPath
-        # print(self._old_prim_path)
         camPath = str(self.PATHS_LIST[self.COMBO_CAMS.model.get_item_value_model().as_int])
         self.BACKPLATE = f'{camPath}/{self._backplate_name.get_value_as_string()}'
         prim_path = self.BACKPLATE
@@ -240,10 +239,10 @@ class ExtensionWindow(ui.Window):
         prim.GetAttribute('xformOp:rotateXYZ').Set(Vec3d(0,0,0))
         prim.GetAttribute('xformOp:scale').Set(self._set_scale(camPath,self._distance_field.model.get_value_as_float(),self.COMBO_FIT.model.get_item_value_model().get_value_as_int()))
         # Material fun
-        scriptdir = os.path.dirname(__file__)
-        joinpath = os.path.join(scriptdir,'../../../assets/BackPlate.mdl')
-        mdlfile = os.path.abspath(joinpath)
-        if exists(mdlfile):
+        # Use carb.tokens to resolve path to mdl
+        rootpath = carb.tokens.get_tokens_interface().resolve("${meadhunt.mesh.backplate}")
+        mdlfile = rootpath+"/assets/BackPlate.mdl"
+        if exists(os.path.abspath(mdlfile)):
             mtlname = self._backplate_name.get_value_as_string()
             mtlpath = f'/World/Looks/{mtlname}'
             mtlfound = False
@@ -251,28 +250,31 @@ class ExtensionWindow(ui.Window):
             isimage = False
             for prim in self._stage.Traverse():
                 if (prim.GetPath() == mtlpath):
-                    # print('material found: ',mtlpath)
                     mtlfound = True
                     break
             if not mtlfound:
                 omni.kit.commands.execute('CreateMdlMaterialPrim',mtl_url=mdlfile,mtl_name=mtlname,mtl_path=mtlpath)
-                # omni.kit.commands.execute('ChangeProperty',prop_path=Sdf.Path(f'{mtlpath}/Shader.inputs:emission_image'),value=Sdf.AssetPath(self._texture_field.get_value_as_string()),type_to_create_if_not_exist=Sdf.ValueTypeName('asset'),prev=None)
                 mtlfound = True
-            # print('mtlfound: ',mtlfound)
+
             mtlprim = self._stage.GetPrimAtPath(mtlpath)
-            # omni.usd.create_material_input(mtlprim,'emission_image',Sdf.AssetPath(self._texture_field.get_value_as_string()),Sdf.ValueTypeNames.Asset)
-            shaderprim = omni.usd.get_shader_from_material(mtlprim)
-            inputs = UsdShade.Shader(shaderprim).GetInputs()
+            shaderprim = self._stage.GetPrimAtPath(mtlpath+"/Shader")
+            shaderobj = omni.usd.get_shader_from_material(mtlprim)
+            if not shaderprim.GetAttribute("info:mdl:sourceAsset").Get():
+                shaderprim.GetAttribute("info:mdl:sourceAsset").Set(Sdf.AssetPath(mdlfile))
+                shaderprim.GetAttribute("info:mdl:sourceAsset:subIdentifier").Set("BackPlate")
+            print("shader source asset: ",shaderprim.GetAttribute("info:mdl:sourceAsset").Get())
+            print("shader source asset sub: ",shaderprim.GetAttribute("info:mdl:sourceAsset:subIdentifier").Get())
+            print("shader inputs: ",UsdShade.Shader(shaderobj).GetInputs())
+            inputs = UsdShade.Shader(shaderobj).GetInputs()
             for input in inputs:
                 if input.GetBaseName() == 'emission_image':
                     inputimage = input
                     isimage = True
                     break
             if inputimage == None and not isimage:
-                # omni.usd.get_shader_from_material
                 omni.usd.create_material_input(mtlprim,'emission_image',Sdf.AssetPath(self._texture_field.get_value_as_string()),Sdf.ValueTypeNames.Asset)
                 omni.kit.commands.execute('BindMaterial',prim_path=[self.BACKPLATE],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
-                inputs = UsdShade.Shader(shaderprim).GetInputs()
+                inputs = UsdShade.Shader(shaderobj).GetInputs()
                 for input in inputs:
                     if input.GetBaseName() == 'emission_image':
                         inputimage = input
@@ -281,6 +283,8 @@ class ExtensionWindow(ui.Window):
             if inputimage != None and isimage:
                 if self._texture_field.get_value_as_string() != '' and self._texture_field.get_value_as_string() != input.Get():
                     input.Set(Sdf.AssetPath(self._texture_field.get_value_as_string()))
+        else:
+            print("ERROR: File missing ",os.path.abspath(mdlfile))
         
     def _fix_path(self, str):
         txt = re.split(r'[/\\]',str)
@@ -292,7 +296,6 @@ class ExtensionWindow(ui.Window):
             if file_name != '' and directory_path != None:
                 self._file_return = os.path.join(directory_path, file_name)
                 self._file_return = self._fix_path(self._file_return)
-                # self._valid_xml = xml_data(self.DEBUG, self._file_return).valid_xml()
 
             if self._file_return:
                 field.set_value(self._file_return)
@@ -318,14 +321,6 @@ class ExtensionWindow(ui.Window):
             self._open_file_dialog.hide()
             self._open_file_dialog.destroy()
 
-        # self._open_file_dialog = FilePickerDialog(
-        #         'Select XML File',
-        #         apply_button_label='Select',
-        #         click_apply_handler=lambda f, d: _on_click_open(f, d),
-        #         click_cancel_handler=lambda f, d: _on_click_cancel(f, d),
-        #         file_extension_options = [('*.xml', 'Files (*.xml)')],
-        #         # item_filter_fn=lambda item: self._on_filter_xml(item)
-        #     )
         self._open_file_dialog = FilePickerDialog(
             'Open BackPlate File',
             apply_button_label='Open',
