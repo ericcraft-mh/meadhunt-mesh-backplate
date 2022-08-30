@@ -1,22 +1,40 @@
-# Extension Project Template
 
-This project was automatically generated.
+# Mead & Hunt Backplate
+![Backplate Screenshot](/images/backplate_screenshot_v1.0.0.jpg)
 
-- `app` - It is a folder link to the location of your *Omniverse Kit* based app.
-- `exts` - It is a folder where you can add new extensions. It was automatically added to extension search path. (Extension Manager -> Gear Icon -> Extension Search Path).
+## About
+This tool was created to mimic the features and usage of the [Maya image plane](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2022/ENU/Maya-LightingShading/files/GUID-F72F8E1B-EFFE-400E-BD92-5441BE9CD28F-htm.html) and [Martin Breidt's imagePlane](https://apps.autodesk.com/3DSMAX/en/Detail/Index?id=937735873795409037&appLang=en&os=Win64) maxscript.
 
-Open this folder using Visual Studio Code. It will suggest you to install few extensions that will make python experience better.
+## Usage
+After installation the dialog can be found in Window > Mead & Hunt > BackPlate.
 
-Look for "meadhunt.mesh.imageplane" extension in extension manager and enable it. Try applying changes to any python files, it will hot-reload and you can observe results immediately.
+![Backplate UI](images/backplate_ui_v1.0.0.jpg)
 
-Alternatively, you can launch your app from console with this folder added to search path and your extension enabled, e.g.:
+**Cameras:** Drop-down of all available perspective cameras.
+- `NOTE:` Includes the viewport Perspective Camera `OmniverseKit_Persp`.
 
-```
-> app\omni.code.bat --ext-folder exts --enable omni.hello.world
-```
+**Canvas Fill:** Drop-down of canvas fit methods.
+- `Fit Height (default):` Fits the image so the top/bottom aligns with the top/bottom of the viewport canvas.
+- `Fit Width:` Fits the image so the left/right aligns with the left/right of the viewport canvas.
 
-# App Link Setup
+**Name Root:** `'BackPlate' (default)` String added at the beginning of the mesh name followed by underscore and camera name, ex `BackPlate_Camera`.
 
+**Texture:** Path to the texture to be assigned to the BackPlate object. Folder button will open `FilePickerDialog` filtered to image formats supported by Omniverse. 
+- `NOTE:` The material created and assigned is a custom emissive mdl shader `(assets/BackPlate.mdl)` with the name matching the BackPlate object.
+
+**Distance:** Controls for adjusting the distance from the Camera.
+- `NOTE:` Controls are linked to allow for soft maximum ranges. Values entered into the `FloatField` greater than the maximum of the slider will grow the maximum by 10%, entering 2000 in the field will set the maximum to 2200.
+
+**Set BackPlate:** Button to manually create a New BackPlate.
+- `NOTE:` BackPlate should be dynamically created whenever an adjustment is made to the UI.
+
+## Adding This Extension
+To add this extension to your Omniverse app:
+1. Go into: Extension Manager -> Gear Icon -> Extension Search Path
+2. Add this as a search path: `git://github.com/ericcraft-mh/meadhunt-mesh-backplate.git?branch=main&dir=exts`
+
+
+## App Link Setup
 If `app` folder link doesn't exist or broken it can be created again. For better developer experience it is recommended to create a folder link named `app` to the *Omniverse Kit* app installed from *Omniverse Launcher*. Convenience script to use is included.
 
 Run:
@@ -40,13 +58,6 @@ You can also just pass a path to create link to:
 ```
 
 
-# Sharing Your Extensions
-
-This folder is ready to be pushed to any git repository. Once pushed direct link to a git repository can be added to *Omniverse Kit* extension search paths.
-
-Link might look like this: `git://github.com/ericcraft-mh/meadhunt-mesh-imageplane.git?branch=main&dir=exts`
-
-Notice `exts` is repo subfolder with extensions. More information can be found in "Git URL as Extension Search Paths" section of developers manual.
-
-To add a link to your *Omniverse Kit* based app go into: Extension Manager -> Gear Icon -> Extension Search Path
+## Contributing
+The source code for this repository is provided as-is, but I am accepting outside contributions. Issues, Feature Requests, and Pull Requests are welcomed.
 
