@@ -7,7 +7,7 @@
 ## About
 This tool was created so users can place a card with a background image (`BackPlate`) which is linked to the camera. These cards are typically used to align Omniverse cameras and models with real images. The card will match the original aspect ratio of the selected `Texture` and the user can select to maximize the `Height` or `Width` of the card to align with the viewport canvas. The card will properly scale based on the distance from the camera to ensure proper alignment. All materials are created by the tool using a `custom emissive-only MDL` file.
 
-# Usage
+## Usage
 After installation the dialog can be opened from **`Window > Mead & Hunt > BackPlate`**.
 
 ![BackPlate UI](images/backplate_ui_v1.0.0.jpg)
@@ -58,7 +58,7 @@ You can also just pass a path to create link to:
 > link_app.bat --path "C:/Users/bob/AppData/Local/ov/pkg/create-2021.3.4"
 ```
 
-# Contributing
+## Contributing
 The source code for this repository is provided as-is, but I am accepting outside contributions.
 
 Issues, Feature Requests, and Pull Requests are welcomed.
