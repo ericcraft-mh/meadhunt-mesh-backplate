@@ -1,4 +1,3 @@
-from ctypes import alignment
 import os
 from os.path import exists
 import re
@@ -149,7 +148,7 @@ class ExtensionWindow(ui.Window):
         else:
             imgw = rwidth
             imgh = rheight
-        
+
         txtraspect = imgw/imgh
         xscale = (hfov*distance)/50.0
         if fit==0:
@@ -157,41 +156,34 @@ class ExtensionWindow(ui.Window):
             xscale *= txtraspect/resaspect
         else:
             yscale = xscale/txtraspect
-        return Vec3d(xscale,yscale,1.0)
+        if UsdGeom.GetStageUpAxis(self._stage) != 'Z':
+            return Vec3d(xscale,1.0,yscale)
+        else:
+            return Vec3d(xscale,yscale,1.0)
 
     def _build_ui(self):
         with self.frame:
             with ui.VStack(height=0):
                 with ui.VStack(spacing=5, name='frame_v_stack'):
-                    self.COMBO_CAMS = self._create_combo('Camera:', self.CAMS_LIST, 0)
+                    self.COMBO_CAMS = self._create_combo('Cameras:', self.CAMS_LIST, 0)
                     self.COMBO_CAMS.set_mouse_pressed_fn(lambda a,b,c,d:self._fill_combo(self.COMBO_CAMS))
                     self.COMBO_CAMS.model.get_item_value_model().add_value_changed_fn(lambda a:self._set_plane())
+                    self.COMBO_FIT = self._create_combo('Canvas Fill:', ['Fit Height','Fit Width'], 0)
+                    self.COMBO_FIT.model.get_item_value_model().add_value_changed_fn(lambda a:self._set_plane())
+                    with ui.HStack():
+                        ui.Label('Name Root:', name='nameLbl', width=self.LABEL_WIDTH)
+                        self._backplate_name = ui.StringField(name='namefield', height=self.BUTTON_SIZE).model
+                        self._backplate_name.set_value('BackPlate')
                     self._texture_field = self._create_path(str='Texture:',paths='')
-                    self._image_stack = ui.HStack()
-                    with self._image_stack:
-                        height=0
-                        self._image = ui.Image('C:/Users/02814/Pictures/Enscape_2022-04-27-11-26-08.png',alignemnt=ui.Alignment.CENTER,fill_policy=ui.FillPolicy.PRESERVE_ASPECT_FIT)
                     with ui.HStack():
                         ui.Label('Distance:', name='distLbl', width=self.LABEL_WIDTH)
                         self._distance_field = ui.FloatField(width=50)
                         ui.Spacer(width=5.0)
-                        self._distance_slider = ui.FloatSlider(min=2, max=1000, step=1.0)
+                        self._distance_slider = ui.FloatSlider(min=1, max=1000, step=1.0)
                         # Link field and slider
                         self._distance_slider.model = self._distance_field.model
                         self._distance_slider.model.set_value(200.0)
                         self._distance_field.model.add_value_changed_fn(lambda a: self._set_plane(max=a))
-                    with ui.CollapsableFrame('BackPlate Options',collapsed = True):
-                        with ui.VStack(spacing=5, name='collapse_v_stack'):
-                            with ui.HStack():
-                                ui.Label('Name Root:', name='nameLbl', width=self.LABEL_WIDTH)
-                                self._backplate_name = ui.StringField(name='namefield', height=self.BUTTON_SIZE).model
-                                self._backplate_name.set_value('BackPlate')
-                            self.COMBO_FIT = self._create_combo('Canvas Fill:', ['Fit Height','Fit Width'], 0)
-                            self.COMBO_FIT.model.get_item_value_model().add_value_changed_fn(lambda a:self._set_plane())
-                            self._cb_dblsided = self._create_checkbox('Double Sided', False, '/Shader.inputs:dbl_sided', False)
-                            self._cb_shadows = self._create_checkbox('Cast Shadows', True, '.primvars:doNotCastShadows', True)
-                            self._cb_secondary = self._create_checkbox('Invisible To Secondary Rays', False, '.primvars:invisibleToSecondaryRays', False)
-
                 ui.Spacer(height=2)
                 self.btn_click = ui.Button('Set BackPlate', name='BtnClick', clicked_fn=lambda: self._set_plane())
 
@@ -223,37 +215,22 @@ class ExtensionWindow(ui.Window):
                 combo.model.append_child_item(None, ui.SimpleStringModel(item))
         return combo
 
-    def _create_checkbox(self, str, checked, prop, propInv, lbl_name='label', cb_name='checkbox'):
-        with ui.HStack():
-            checkbox = ui.CheckBox(name=cb_name, width=24)
-            checkbox.model.set_value(checked)
-            checkbox.model.add_value_changed_fn(lambda a: self._set_plane())
-            ui.Label(str, name=lbl_name)
-        return checkbox
-
     def _set_plane(self, max=None, fit=0):
         # implement soft range to grow slider if value is greater that max
-<<<<<<< HEAD
-        if self._texture_field.get_value_as_string() != '':
-            if max != None and max.get_value_as_float() > self._distance_slider.max:
-                self._distance_slider.max = max.get_value_as_float()*1.1
-            self._old_prim_path = None
-            self._get_stage()
-            primname = f'{self._backplate_name.get_value_as_string()}_{str(self.CAMS_LIST[self.COMBO_CAMS.model.get_item_value_model().as_int])}'
-=======
         if max != None and max.get_value_as_float() > self._distance_slider.max:
             self._distance_slider.max = max.get_value_as_float()*1.1
         self._old_prim_path = None
         self._get_stage()
+        primname = f'{self._backplate_name.get_value_as_string()}_{str(self.CAMS_LIST[self.COMBO_CAMS.model.get_item_value_model().as_int])}'
         for prim in self._stage.Traverse():
-            if prim.IsValid() and prim.IsA(UsdGeom.Mesh) and prim.GetName() == self._backplate_name.get_value_as_string():
+            if prim.IsValid() and prim.IsA(UsdGeom.Mesh) and prim.GetName() == primname:
                 self._old_prim_path = prim.GetPath()
         if self._old_prim_path == None:
             result, oldPath = omni.kit.commands.execute('CreateMeshPrimWithDefaultXform',prim_type='Plane')
             if result:
                 self._old_prim_path = oldPath
         camPath = str(self.PATHS_LIST[self.COMBO_CAMS.model.get_item_value_model().as_int])
-        self.BACKPLATE = f'{camPath}/{self._backplate_name.get_value_as_string()}'
+        self.BACKPLATE = f'{camPath}/{primname}'
         prim_path = self.BACKPLATE
         if self._old_prim_path != prim_path:
             omni.kit.commands.execute('MovePrim',path_from=str(self._old_prim_path),path_to=self.BACKPLATE)
@@ -263,85 +240,35 @@ class ExtensionWindow(ui.Window):
             self._distance_field.model.set_value(prim_z)
         # Reset xformOp to align with camera parent
         prim.GetAttribute('xformOp:translate').Set(Vec3d(0,0,-self._distance_field.model.get_value_as_float()))
-        prim.GetAttribute('xformOp:rotateXYZ').Set(Vec3d(0,0,0))
+        if UsdGeom.GetStageUpAxis(self._stage) != 'Z':
+            prim.GetAttribute('xformOp:rotateXYZ').Set(Vec3d(90,0,180))
+        else:
+            prim.GetAttribute('xformOp:rotateXYZ').Set(Vec3d(0,0,0))
         prim.GetAttribute('xformOp:scale').Set(self._set_scale(camPath,self._distance_field.model.get_value_as_float(),self.COMBO_FIT.model.get_item_value_model().get_value_as_int()))
         # Material fun
         # Use carb.tokens to resolve path to mdl
         rootpath = carb.tokens.get_tokens_interface().resolve("${meadhunt.mesh.backplate}")
         mdlfile = rootpath+"/assets/BackPlate.mdl"
         if exists(os.path.abspath(mdlfile)):
-            mtlname = self._backplate_name.get_value_as_string()
+            mtlname = primname
             mtlpath = f'/World/Looks/{mtlname}'
             mtlfound = False
             inputimage = None
             isimage = False
->>>>>>> parent of 5c28d59 (Updated window.py)
             for prim in self._stage.Traverse():
-                if prim.IsValid() and prim.IsA(UsdGeom.Mesh) and prim.GetName() == primname:
-                    self._old_prim_path = prim.GetPath()
-            if self._old_prim_path == None:
-                result, oldPath = omni.kit.commands.execute('CreateMeshPrimWithDefaultXform',prim_type='Plane')
-                if result:
-                    self._old_prim_path = oldPath
-            camPath = str(self.PATHS_LIST[self.COMBO_CAMS.model.get_item_value_model().as_int])
-            self.BACKPLATE = f'{camPath}/{primname}'
-            prim_path = self.BACKPLATE
-            if self._old_prim_path != prim_path:
-                omni.kit.commands.execute('MovePrim',path_from=str(self._old_prim_path),path_to=self.BACKPLATE)
-            prim = self._stage.GetPrimAtPath(self.BACKPLATE)
-            prim_z = prim.GetAttribute('xformOp:translate').Get()[2]
-            if prim_z > 0.0:
-                self._distance_field.model.set_value(prim_z)
-            print(f'{prim_path}.primvars:invisibleToSecondaryRays')
-            print(Sdf.Path(f'{prim_path}.primvars:invisibleToSecondaryRays'))
-            print(self._cb_secondary.model.get_value_as_bool())
-            
-            omni.kit.commands.execute('ChangeProperty',prop_path=Sdf.Path(f'{prim_path}.primvars:doNotCastShadows'),value=not self._cb_shadows.model.get_value_as_bool(),prev=None)
-            omni.kit.commands.execute('ChangeProperty',prop_path=Sdf.Path(f'{prim_path}.primvars:invisibleToSecondaryRays'),value=self._cb_secondary.model.get_value_as_bool(),prev=None)
-            # prim.GetAttribute('primvars:invisibleToSecondaryRays').Set(self._cb_secondary.model.get_value_as_bool())
-            # Reset xformOp to align with camera parent
-            prim.GetAttribute('xformOp:translate').Set(Vec3d(0,0,-self._distance_field.model.get_value_as_float()))
-            if UsdGeom.GetStageUpAxis(self._stage) != 'Z':
-                prim.GetAttribute('xformOp:rotateXYZ').Set(Vec3d(90,0,180))
-            else:
-                prim.GetAttribute('xformOp:rotateXYZ').Set(Vec3d(0,0,0))
-            prim.GetAttribute('xformOp:scale').Set(self._set_scale(camPath,self._distance_field.model.get_value_as_float(),self.COMBO_FIT.model.get_item_value_model().get_value_as_int()))
-            # Material fun
-            # Use carb.tokens to resolve path to mdl
-            rootpath = carb.tokens.get_tokens_interface().resolve('${meadhunt.mesh.backplate}')
-            mdlfile = rootpath+'/assets/BackPlate.mdl'
-            if exists(os.path.abspath(mdlfile)):
-                mtlname = primname
-                mtlpath = f'/World/Looks/{mtlname}'
-                mtlfound = False
-                inputimage = None
-                isimage = False
-                for prim in self._stage.Traverse():
-                    if (prim.GetPath() == mtlpath):
-                        mtlfound = True
-                        break
-                if not mtlfound:
-                    omni.kit.commands.execute('CreateMdlMaterialPrim',mtl_url=mdlfile,mtl_name=mtlname,mtl_path=mtlpath)
+                if (prim.GetPath() == mtlpath):
                     mtlfound = True
+                    break
+            if not mtlfound:
+                omni.kit.commands.execute('CreateMdlMaterialPrim',mtl_url=mdlfile,mtl_name=mtlname,mtl_path=mtlpath)
+                mtlfound = True
 
-<<<<<<< HEAD
-                mtlprim = self._stage.GetPrimAtPath(mtlpath)
-                shaderprim = self._stage.GetPrimAtPath(mtlpath+'/Shader')
-                shaderobj = omni.usd.get_shader_from_material(mtlprim)
-                if shaderprim.GetAttribute('info:mdl:sourceAsset').Get() != Sdf.AssetPath(mdlfile):
-                    shaderprim.GetAttribute('info:mdl:sourceAsset').Set(Sdf.AssetPath(mdlfile))
-                if shaderprim.GetAttribute('info:mdl:sourceAsset:subIdentifier').Get() != 'BackPlate':
-                    shaderprim.GetAttribute('info:mdl:sourceAsset:subIdentifier').Set('BackPlate')
-                # shaderprim.GetAttribute('inputs:dbl_sided').Set(self._cb_dblsided.model.get_value_as_bool())
-                print('shader source asset: ',shaderprim.GetAttribute('info:mdl:sourceAsset').Get())
-                print('shader source asset sub: ',shaderprim.GetAttribute('info:mdl:sourceAsset:subIdentifier').Get())
-                print('shader inputs: ',UsdShade.Shader(shaderobj).GetInputs())
-=======
             mtlprim = self._stage.GetPrimAtPath(mtlpath)
             shaderprim = self._stage.GetPrimAtPath(mtlpath+"/Shader")
             shaderobj = omni.usd.get_shader_from_material(mtlprim)
-            if not shaderprim.GetAttribute("info:mdl:sourceAsset").Get():
+            if shaderprim.GetAttribute("info:mdl:sourceAsset").Get() != Sdf.AssetPath(mdlfile):
                 shaderprim.GetAttribute("info:mdl:sourceAsset").Set(Sdf.AssetPath(mdlfile))
+            if shaderprim.GetAttribute("info:mdl:sourceAsset:subIdentifier").Get() != "BackPlate":
                 shaderprim.GetAttribute("info:mdl:sourceAsset:subIdentifier").Set("BackPlate")
             print("shader source asset: ",shaderprim.GetAttribute("info:mdl:sourceAsset").Get())
             print("shader source asset sub: ",shaderprim.GetAttribute("info:mdl:sourceAsset:subIdentifier").Get())
@@ -355,33 +282,17 @@ class ExtensionWindow(ui.Window):
             if inputimage == None and not isimage:
                 omni.usd.create_material_input(mtlprim,'emission_image',Sdf.AssetPath(self._texture_field.get_value_as_string()),Sdf.ValueTypeNames.Asset)
                 omni.kit.commands.execute('BindMaterial',prim_path=[self.BACKPLATE],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
->>>>>>> parent of 5c28d59 (Updated window.py)
                 inputs = UsdShade.Shader(shaderobj).GetInputs()
                 for input in inputs:
                     if input.GetBaseName() == 'emission_image':
                         inputimage = input
                         isimage = True
                         break
-                print('inputimage: ',inputimage)
-                print('isimage: ',isimage)
-                print('backplate: ',self.BACKPLATE)
-                if inputimage == None and not isimage:
-                    omni.usd.create_material_input(mtlprim,'emission_image',Sdf.AssetPath(self._texture_field.get_value_as_string()),Sdf.ValueTypeNames.Asset)
-                    omni.kit.commands.execute('BindMaterial',prim_path=[self.BACKPLATE],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
-                    inputs = UsdShade.Shader(shaderobj).GetInputs()
-                    for input in inputs:
-                        if input.GetBaseName() == 'emission_image':
-                            inputimage = input
-                            isimage = True
-                            break
-                else:
-                    prim = self._stage.GetPrimAtPath(self.BACKPLATE)
-                    if not len(UsdShade.MaterialBindingAPI(prim).GetDirectBindingRel().GetTargets()):
-                        omni.kit.commands.execute('BindMaterial',prim_path=[self.BACKPLATE],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
-                if inputimage != None and isimage and self._texture_field.get_value_as_string() != input.Get():
+            if inputimage != None and isimage:
+                if self._texture_field.get_value_as_string() != '' and self._texture_field.get_value_as_string() != input.Get():
                     input.Set(Sdf.AssetPath(self._texture_field.get_value_as_string()))
-            else:
-                print('ERROR: File missing ',os.path.abspath(mdlfile))
+        else:
+            print("ERROR: File missing ",os.path.abspath(mdlfile))
         
     def _fix_path(self, str):
         txt = re.split(r'[/\\]',str)
@@ -397,8 +308,6 @@ class ExtensionWindow(ui.Window):
             if self._file_return:
                 field.set_value(self._file_return)
                 self._set_plane()
-                self._image_stack.height = ui.Length(128)
-                self._image.source_url = self._file_return
                 if self._open_file_dialog:
                     self._open_file_dialog.hide()
 
