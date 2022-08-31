@@ -244,6 +244,12 @@ class ExtensionWindow(ui.Window):
         prim_z = prim.GetAttribute('xformOp:translate').Get()[2]
         if prim_z > 0.0:
             self._distance_field.model.set_value(prim_z)
+        # Create primvars for doNotCastShadows and invisibleToSecondaryRays
+        shadows_attrib = prim.CreateAttribute('primvars:doNotCastShadows',Sdf.ValueTypeNames.Bool)
+        secondaryRays_attrib = prim.CreateAttribute('primvars:invisibleToSecondaryRays',Sdf.ValueTypeNames.Bool)
+        # Set the Values based on UI settings
+        shadows_attrib.Set(not self._cb_shadows.model.get_value_as_bool())
+        secondaryRays_attrib.Set(self._cb_secondary.model.get_value_as_bool())
         # Reset xformOp to align with camera parent
         prim.GetAttribute('xformOp:translate').Set(Vec3d(0,0,-self._distance_field.model.get_value_as_float()))
         if UsdGeom.GetStageUpAxis(self._stage) != 'Z':
@@ -275,6 +281,9 @@ class ExtensionWindow(ui.Window):
                 shaderprim.GetAttribute("info:mdl:sourceAsset").Set(Sdf.AssetPath(mdlfile))
             if shaderprim.GetAttribute("info:mdl:sourceAsset:subIdentifier").Get() != "BackPlate":
                 shaderprim.GetAttribute("info:mdl:sourceAsset:subIdentifier").Set("BackPlate")
+            if not shaderprim.GetAttribute('inputs:dbl_sided').Get():
+                shaderprim.CreateAttribute('inputs:dbl_sided',Sdf.ValueTypeNames.Bool)
+            shaderprim.GetAttribute('inputs:dbl_sided').Set(self._cb_dblsided.model.get_value_as_bool())
             inputs = UsdShade.Shader(shaderobj).GetInputs()
             for input in inputs:
                 if input.GetBaseName() == 'emission_image':
@@ -290,8 +299,12 @@ class ExtensionWindow(ui.Window):
                         inputimage = input
                         isimage = True
                         break
-            if inputimage != None and isimage:
-                if self._texture_field.get_value_as_string() != '' and self._texture_field.get_value_as_string() != input.Get():
+            else:
+                prim = self._stage.GetPrimAtPath(prim_path)
+                if not len(UsdShade.MaterialBindingAPI(prim).GetDirectBindingRel().GetTargets()):
+                    omni.kit.commands.execute('BindMaterial',prim_path=[str(prim_path)],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
+
+            if inputimage != None and isimage and self._texture_field.get_value_as_string() != input.Get():
                     input.Set(Sdf.AssetPath(self._texture_field.get_value_as_string()))
         else:
             print("ERROR: File missing ",os.path.abspath(mdlfile))
