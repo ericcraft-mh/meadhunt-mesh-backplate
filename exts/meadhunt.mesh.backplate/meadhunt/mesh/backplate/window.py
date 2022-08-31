@@ -188,20 +188,13 @@ class ExtensionWindow(ui.Window):
                                 self._backplate_name.set_value('BackPlate')
                             self.COMBO_FIT = self._create_combo('Canvas Fill:', ['Fit Height','Fit Width'], 0)
                             self.COMBO_FIT.model.get_item_value_model().add_value_changed_fn(lambda a:self._set_plane())
+                            self._cb_dblsided = self._create_checkbox('Double Sided', False, (lambda a:self._set_plane()))
+                            self._cb_shadows = self._create_checkbox('Cast Shadows', True, (lambda a:self._set_plane()))
+                            self._cb_secondary = self._create_checkbox('Invisible To Secondary Rays', False, (lambda a:self._set_plane()))
+                            self._cb_preview = self._create_checkbox('Image Preview', True, (lambda a:self._show_preview(a.get_value_as_bool())))
 
                 ui.Spacer(height=2)
                 self.btn_click = ui.Button('Set BackPlate', name='BtnClick', clicked_fn=lambda: self._set_plane())
-
-    def _on_filter_files(self, item) -> bool:
-        '''Callback to filter the choices of file names in the open or save dialog'''
-        if not item or item.is_folder:
-            return True
-        if self._open_file_dialog.current_filter_option == 0:
-            # Show only files with listed extensions
-            return item.path.endswith(('.bmp','.dds','.exr','.gif','.hdr','.jpeg','.jpg','.png','.psd','.tga'))
-        else:
-            # Show All Files (*)
-            return True
 
     def _create_path(self, str:str, paths:str, lbl_name:str='label', str_name:str='path'):
         with ui.HStack(style={'Button':{'margin':0.0}}):
@@ -219,6 +212,14 @@ class ExtensionWindow(ui.Window):
             for item in items:
                 combo.model.append_child_item(None, ui.SimpleStringModel(item))
         return combo
+
+    def _create_checkbox(self, str:str, checked:bool, fn, lbl_name:str='label', cb_name:str='checkbox'):
+        with ui.HStack():
+            checkbox = ui.CheckBox(name=cb_name, width=24)
+            checkbox.model.set_value(checked)
+            ui.Label(str, name=lbl_name)
+            checkbox.model.add_value_changed_fn(fn)
+        return checkbox
 
     def _set_plane(self, max:float=None, fit:int=0):
         # implement soft range to grow slider if value is greater that max
@@ -298,6 +299,17 @@ class ExtensionWindow(ui.Window):
     def _fix_path(self, str:str):
         txt = re.split(r'[/\\]',str)
         return '/'.join(txt)
+
+    def _on_filter_files(self, item) -> bool:
+        '''Callback to filter the choices of file names in the open or save dialog'''
+        if not item or item.is_folder:
+            return True
+        if self._open_file_dialog.current_filter_option == 0:
+            # Show only files with listed extensions
+            return item.path.endswith(('.bmp','.dds','.exr','.gif','.hdr','.jpeg','.jpg','.png','.psd','.tga'))
+        else:
+            # Show All Files (*)
+            return True
 
     def _texture_file(self, field:ui.StringField):
         def _on_click_open(file_name:str, directory_path:str):
