@@ -64,10 +64,12 @@ class ExtensionWindow(ui.Window):
         self.visible = False
 
     def _get_stage(self):
+        '''Get stage if it is currently None'''
         if self._stage == None:
             self._stage = omni.usd.get_context().get_stage()
             
     def _get_render_resolution(self):
+        '''Get and Return resolution from RenderProduct_Viewport'''
         # Make sure stage is set
         self._get_stage()
         # Get scene render resolution
@@ -76,6 +78,7 @@ class ExtensionWindow(ui.Window):
         return view_res
         
     def _get_cameras(self):
+        '''Get scene persepctive cameras, return tuple(list,list) for camera names and paths'''
         # Create empty lists to add cameras and prim paths to
         self.CAMS_LIST = []
         self.PATHS_LIST = []
@@ -90,6 +93,7 @@ class ExtensionWindow(ui.Window):
                 self.PATHS_LIST.append(prim.GetPath())
 
     def _fill_combo(self, combo:ui.ComboBox):
+        '''Fill Combo List'''
         # Get the current index of the selected item
         currentIndex = combo.model.get_item_value_model().as_int
         # # Get the current name of the item
@@ -117,7 +121,8 @@ class ExtensionWindow(ui.Window):
     def _get_backplate(self):
         print()
 
-    def _set_scale(self,cam_path:Sdf.Path,distance:float,fit=0):
+    def _set_scale(self,cam_path:Sdf.Path,distance:float,fit:int=0):
+        '''Calculate Scale for BackPlate based on camera, backplate image, and backplate mesh values'''
         self._get_stage()
         img = None
         cam_prim = self._stage.GetPrimAtPath(cam_path)
@@ -126,13 +131,11 @@ class ExtensionWindow(ui.Window):
         # cam_vAperture = cam_prim.GetAttribute('verticalAperture').Get()
         hfov = math.tan(math.atan(cam_hAperture/(cam_focal*2.0)))
         # vfov = math.tan(math.atan(hfov/(cam_hAperture/cam_vAperture)))
-        rwidth = self._get_render_resolution()[0]
-        rheight = self._get_render_resolution()[1]
-        resaspect = rwidth/rheight
+        rendWidth,rendHeight = self._get_render_resolution()
+        resaspect = rendWidth/rendHeight
         imgpath = self._texture_field.get_value_as_string()
         if imgpath != '':
             img = Image.open(self._texture_field.get_value_as_string())
-            
         else:
             mtlname = self._backplate_name.get_value_as_string()
             mtlpath = f'/World/Looks/{mtlname}'
@@ -146,9 +149,8 @@ class ExtensionWindow(ui.Window):
         if img:
             imgw,imgh = img.size
         else:
-            imgw = rwidth
-            imgh = rheight
-
+            imgw = rendWidth
+            imgh = rendHeight
         txtraspect = imgw/imgh
         xscale = (hfov*distance)/50.0
         if fit==0:
@@ -168,13 +170,7 @@ class ExtensionWindow(ui.Window):
                     self.COMBO_CAMS = self._create_combo('Cameras:', self.CAMS_LIST, 0)
                     self.COMBO_CAMS.set_mouse_pressed_fn(lambda a,b,c,d:self._fill_combo(self.COMBO_CAMS))
                     self.COMBO_CAMS.model.get_item_value_model().add_value_changed_fn(lambda a:self._set_plane())
-                    self.COMBO_FIT = self._create_combo('Canvas Fill:', ['Fit Height','Fit Width'], 0)
-                    self.COMBO_FIT.model.get_item_value_model().add_value_changed_fn(lambda a:self._set_plane())
-                    with ui.HStack():
-                        ui.Label('Name Root:', name='nameLbl', width=self.LABEL_WIDTH)
-                        self._backplate_name = ui.StringField(name='namefield', height=self.BUTTON_SIZE).model
-                        self._backplate_name.set_value('BackPlate')
-                    self._texture_field = self._create_path(str='Texture:',paths='')
+                    self._texture_field = self._create_path(str='Image:',paths='')
                     with ui.HStack():
                         ui.Label('Distance:', name='distLbl', width=self.LABEL_WIDTH)
                         self._distance_field = ui.FloatField(width=50)
@@ -183,7 +179,16 @@ class ExtensionWindow(ui.Window):
                         # Link field and slider
                         self._distance_slider.model = self._distance_field.model
                         self._distance_slider.model.set_value(200.0)
-                        self._distance_field.model.add_value_changed_fn(lambda a: self._set_plane(max=a))
+                        self._distance_field.model.add_value_changed_fn(lambda a: self._set_plane(max=a.get_value_as_float()))
+                    with ui.CollapsableFrame('BackPlate Options',collapsed = True):
+                        with ui.VStack(spacing=5, name='collapse_v_stack'):
+                            with ui.HStack():
+                                ui.Label('Name Root:', name='nameLbl', width=self.LABEL_WIDTH)
+                                self._backplate_name = ui.StringField(name='namefield', height=self.BUTTON_SIZE).model
+                                self._backplate_name.set_value('BackPlate')
+                            self.COMBO_FIT = self._create_combo('Canvas Fill:', ['Fit Height','Fit Width'], 0)
+                            self.COMBO_FIT.model.get_item_value_model().add_value_changed_fn(lambda a:self._set_plane())
+
                 ui.Spacer(height=2)
                 self.btn_click = ui.Button('Set BackPlate', name='BtnClick', clicked_fn=lambda: self._set_plane())
 
@@ -198,7 +203,7 @@ class ExtensionWindow(ui.Window):
             # Show All Files (*)
             return True
 
-    def _create_path(self, str, paths, lbl_name='label', str_name='path'):
+    def _create_path(self, str:str, paths:str, lbl_name:str='label', str_name:str='path'):
         with ui.HStack(style={'Button':{'margin':0.0}}):
             ui.Label(str, name=lbl_name, width=self.LABEL_WIDTH)
             field = ui.StringField(name=str_name, height=self.BUTTON_SIZE).model
@@ -207,7 +212,7 @@ class ExtensionWindow(ui.Window):
             ui.Button(image_url='resources/icons/folder.png', width=self.BUTTON_SIZE, height=self.BUTTON_SIZE, clicked_fn=lambda: self._texture_file(self._texture_field))
         return field
 
-    def _create_combo(self, str, items, selected, lbl_name='label', cmb_name='combo'):
+    def _create_combo(self, str:str, items:list, selected:bool, lbl_name:str='label', cmb_name:str='combo'):
         with ui.HStack():
             ui.Label(str, name=lbl_name, width=self.LABEL_WIDTH)
             combo = ui.ComboBox(selected, name=cmb_name)
@@ -215,13 +220,14 @@ class ExtensionWindow(ui.Window):
                 combo.model.append_child_item(None, ui.SimpleStringModel(item))
         return combo
 
-    def _set_plane(self, max=None, fit=0):
+    def _set_plane(self, max:float=None, fit:int=0):
         # implement soft range to grow slider if value is greater that max
-        if max != None and max.get_value_as_float() > self._distance_slider.max:
-            self._distance_slider.max = max.get_value_as_float()*1.1
+        if max != None and max > self._distance_slider.max:
+            self._distance_slider.max = max*1.1
         self._old_prim_path = None
         self._get_stage()
-        primname = f'{self._backplate_name.get_value_as_string()}_{str(self.CAMS_LIST[self.COMBO_CAMS.model.get_item_value_model().as_int])}'
+        cams_int = self.COMBO_CAMS.model.get_item_value_model().as_int
+        primname = f'{self._backplate_name.get_value_as_string()}_{str(self.CAMS_LIST[cams_int])}'
         for prim in self._stage.Traverse():
             if prim.IsValid() and prim.IsA(UsdGeom.Mesh) and prim.GetName() == primname:
                 self._old_prim_path = prim.GetPath()
@@ -229,12 +235,11 @@ class ExtensionWindow(ui.Window):
             result, oldPath = omni.kit.commands.execute('CreateMeshPrimWithDefaultXform',prim_type='Plane')
             if result:
                 self._old_prim_path = oldPath
-        camPath = str(self.PATHS_LIST[self.COMBO_CAMS.model.get_item_value_model().as_int])
-        self.BACKPLATE = f'{camPath}/{primname}'
-        prim_path = self.BACKPLATE
+        camPath = str(self.PATHS_LIST[cams_int])
+        prim_path = self.BACKPLATE = f'{camPath}/{primname}'
         if self._old_prim_path != prim_path:
-            omni.kit.commands.execute('MovePrim',path_from=str(self._old_prim_path),path_to=self.BACKPLATE)
-        prim = self._stage.GetPrimAtPath(self.BACKPLATE)
+            omni.kit.commands.execute('MovePrim',path_from=str(self._old_prim_path),path_to=prim_path)
+        prim = self._stage.GetPrimAtPath(prim_path)
         prim_z = prim.GetAttribute('xformOp:translate').Get()[2]
         if prim_z > 0.0:
             self._distance_field.model.set_value(prim_z)
@@ -262,7 +267,6 @@ class ExtensionWindow(ui.Window):
             if not mtlfound:
                 omni.kit.commands.execute('CreateMdlMaterialPrim',mtl_url=mdlfile,mtl_name=mtlname,mtl_path=mtlpath)
                 mtlfound = True
-
             mtlprim = self._stage.GetPrimAtPath(mtlpath)
             shaderprim = self._stage.GetPrimAtPath(mtlpath+"/Shader")
             shaderobj = omni.usd.get_shader_from_material(mtlprim)
@@ -270,9 +274,6 @@ class ExtensionWindow(ui.Window):
                 shaderprim.GetAttribute("info:mdl:sourceAsset").Set(Sdf.AssetPath(mdlfile))
             if shaderprim.GetAttribute("info:mdl:sourceAsset:subIdentifier").Get() != "BackPlate":
                 shaderprim.GetAttribute("info:mdl:sourceAsset:subIdentifier").Set("BackPlate")
-            print("shader source asset: ",shaderprim.GetAttribute("info:mdl:sourceAsset").Get())
-            print("shader source asset sub: ",shaderprim.GetAttribute("info:mdl:sourceAsset:subIdentifier").Get())
-            print("shader inputs: ",UsdShade.Shader(shaderobj).GetInputs())
             inputs = UsdShade.Shader(shaderobj).GetInputs()
             for input in inputs:
                 if input.GetBaseName() == 'emission_image':
@@ -281,7 +282,7 @@ class ExtensionWindow(ui.Window):
                     break
             if inputimage == None and not isimage:
                 omni.usd.create_material_input(mtlprim,'emission_image',Sdf.AssetPath(self._texture_field.get_value_as_string()),Sdf.ValueTypeNames.Asset)
-                omni.kit.commands.execute('BindMaterial',prim_path=[self.BACKPLATE],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
+                omni.kit.commands.execute('BindMaterial',prim_path=[prim_path],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
                 inputs = UsdShade.Shader(shaderobj).GetInputs()
                 for input in inputs:
                     if input.GetBaseName() == 'emission_image':
@@ -294,12 +295,12 @@ class ExtensionWindow(ui.Window):
         else:
             print("ERROR: File missing ",os.path.abspath(mdlfile))
         
-    def _fix_path(self, str):
+    def _fix_path(self, str:str):
         txt = re.split(r'[/\\]',str)
         return '/'.join(txt)
 
-    def _texture_file(self, field):
-        def _on_click_open(file_name: str, directory_path: str):
+    def _texture_file(self, field:ui.StringField):
+        def _on_click_open(file_name:str, directory_path:str):
             '''Callback executed when the user selects a file in the open file dialog'''
             if file_name != '' and directory_path != None:
                 self._file_return = os.path.join(directory_path, file_name)
@@ -318,7 +319,7 @@ class ExtensionWindow(ui.Window):
                 self.btn_click.enabled = False
                 ui.set_shade('transparent')
 
-        def _on_click_cancel(file_name: str, directory_path: str):
+        def _on_click_cancel(file_name:str, directory_path:str):
             field.set_value('')
             self.btn_click.enabled = False
             ui.set_shade('transparent')
@@ -339,6 +340,6 @@ class ExtensionWindow(ui.Window):
         )
         self._open_file_dialog.show()
 
-    def _on_visibility_changed(self, visible):
+    def _on_visibility_changed(self, visible:bool):
         if not visible:
             omni.kit.ui.get_editor_menu().set_value(self._menu_path, False)
