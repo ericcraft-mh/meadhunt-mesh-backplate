@@ -38,7 +38,7 @@ class BackPlate(omni.ext.IExt):
         """Handles showing and hiding the window from the 'Windows' menu."""
         if toggled:
             if self._window is None:
-                self._window = ExtensionWindow(self.WINDOW_TITLE, 330, 220, menu)
+                self._window = ExtensionWindow(self.WINDOW_TITLE, 340, 260, menu)
                 self._window._fill_combo(self._window.COMBO_CAMS)
             else:
                 self._window.show()

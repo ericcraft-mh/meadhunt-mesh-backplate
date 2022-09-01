@@ -1,3 +1,4 @@
+from ctypes import alignment
 import os
 from os.path import exists
 import re
@@ -25,7 +26,6 @@ class ExtensionWindow(ui.Window):
     CAMS_LIST =[]
     PATHS_LIST = []
     STAGE = omni.usd.get_context().get_stage()
-    BACKPLATE = None
 
     def __init__(self, title, win_width, win_height, menu_path):
         super().__init__(title, width=win_width, height=win_height)
@@ -40,6 +40,7 @@ class ExtensionWindow(ui.Window):
         if self._stage != None:
             self._fill_combo(self.COMBO_CAMS)
         self._build_ui()
+        self._fill_ui(self._get_backplate())
 
     def on_shutdown(self):
         if self:
@@ -67,7 +68,9 @@ class ExtensionWindow(ui.Window):
         '''Get stage if it is currently None'''
         if self._stage == None:
             self._stage = omni.usd.get_context().get_stage()
-            
+# 
+# The fun Defs
+# 
     def _get_render_resolution(self):
         '''Get and Return resolution from RenderProduct_Viewport'''
         # Make sure stage is set
@@ -91,37 +94,19 @@ class ExtensionWindow(ui.Window):
                 self.CAMS_LIST.append(prim.GetName())
                 # Create a list of paths
                 self.PATHS_LIST.append(prim.GetPath())
-
-    def _fill_combo(self, combo:ui.ComboBox):
-        '''Fill Combo List'''
-        # Get the current index of the selected item
-        currentIndex = combo.model.get_item_value_model().as_int
-        # # Get the current name of the item
-        try:
-            currentItem = self.CAMS_LIST[currentIndex]
-        except IndexError:
-            currentItem = 0
-        self._get_cameras()
-        # Get the new Index based on the name
-        # Use try except in case camera has been deleted
-        # Fallback to 0 if not in the list
-        try:
-            newIndex = self.CAMS_LIST.index(currentItem)
-        except ValueError:
-            newIndex = 0
-        # Clear the list
-        for items in combo.model.get_item_children():
-            combo.model.remove_item(items)
-        # Rebuild the list with the new list
-        for item in self.CAMS_LIST:
-            combo.model.append_child_item(None, ui.SimpleStringModel(item))
-        # Set the new index value so the selection stays with the name not the index value
-        combo.model.get_item_value_model().set_value(newIndex)
     
     def _get_backplate(self):
-        print()
+        cams_int = self.COMBO_CAMS.model.get_item_value_model().as_int
+        cam = str(self.CAMS_LIST[cams_int])
+        backplate = f'{self._backplate_name.get_value_as_string()}_{cam}'
+        path = f'{str(self.PATHS_LIST[cams_int])}/{backplate}'
+        prim = self._stage.GetPrimAtPath(path)
+        if prim.IsValid():
+            return prim
+        else:
+            return None
 
-    def _set_scale(self,cam_path:Sdf.Path,distance:float,fit:int=0):
+    def _calc_scale(self,cam_path:Sdf.Path,distance:float,fit:int=0):
         '''Calculate Scale for BackPlate based on camera, backplate image, and backplate mesh values'''
         self._get_stage()
         img = None
@@ -142,10 +127,9 @@ class ExtensionWindow(ui.Window):
             mtlprim = self._stage.GetPrimAtPath(mtlpath)
             if mtlprim:
                 shaderobj = omni.usd.get_shader_from_material(mtlprim)
-                inputs = UsdShade.Shader(shaderobj).GetInputs()
-                for input in inputs:
-                    if input.GetBaseName() == 'emission_image' and input.Get().path != '':
-                        img = Image.open(input.Get().path)
+                input = UsdShade.Shader(shaderobj).GetInput('emission_image')
+                if input and input.Get().path != '':
+                    img = Image.open(input.Get().path)
         if img:
             imgw,imgh = img.size
         else:
@@ -163,71 +147,19 @@ class ExtensionWindow(ui.Window):
         else:
             return Vec3d(xscale,yscale,1.0)
 
-    def _build_ui(self):
-        with self.frame:
-            with ui.VStack(height=0):
-                with ui.VStack(spacing=5, name='frame_v_stack'):
-                    self.COMBO_CAMS = self._create_combo('Cameras:', self.CAMS_LIST, 0)
-                    self.COMBO_CAMS.set_mouse_pressed_fn(lambda a,b,c,d:self._fill_combo(self.COMBO_CAMS))
-                    self.COMBO_CAMS.model.get_item_value_model().add_value_changed_fn(lambda a:self._set_plane())
-                    self._texture_field = self._create_path(str='Image:',paths='')
-                    with ui.HStack():
-                        ui.Label('Distance:', name='distLbl', width=self.LABEL_WIDTH)
-                        self._distance_field = ui.FloatField(width=50)
-                        ui.Spacer(width=5.0)
-                        self._distance_slider = ui.FloatSlider(min=1, max=1000, step=1.0)
-                        # Link field and slider
-                        self._distance_slider.model = self._distance_field.model
-                        self._distance_slider.model.set_value(200.0)
-                        self._distance_field.model.add_value_changed_fn(lambda a: self._set_plane(max=a.get_value_as_float()))
-                    with ui.CollapsableFrame('BackPlate Options',collapsed = True):
-                        with ui.VStack(spacing=5, name='collapse_v_stack'):
-                            with ui.HStack():
-                                ui.Label('Name Root:', name='nameLbl', width=self.LABEL_WIDTH)
-                                self._backplate_name = ui.StringField(name='namefield', height=self.BUTTON_SIZE).model
-                                self._backplate_name.set_value('BackPlate')
-                            self.COMBO_FIT = self._create_combo('Canvas Fill:', ['Fit Height','Fit Width'], 0)
-                            self.COMBO_FIT.model.get_item_value_model().add_value_changed_fn(lambda a:self._set_plane())
-                            self._cb_dblsided = self._create_checkbox('Double Sided', False, (lambda a:self._set_plane()))
-                            self._cb_shadows = self._create_checkbox('Cast Shadows', True, (lambda a:self._set_plane()))
-                            self._cb_secondary = self._create_checkbox('Invisible To Secondary Rays', False, (lambda a:self._set_plane()))
-                            self._cb_preview = self._create_checkbox('Image Preview', True, (lambda a:self._show_preview(a.get_value_as_bool())))
-                            self.btn_delete = ui.Button('Delete BackPlate', name='DelClick', clicked_fn=lambda: self._del_plane())
-        
-                ui.Spacer(height=2)
-                self.btn_click = ui.Button('Set BackPlate', name='BtnClick', clicked_fn=lambda: self._set_plane())
-
-    def _create_path(self, str:str, paths:str, lbl_name:str='label', str_name:str='path'):
-        with ui.HStack(style={'Button':{'margin':0.0}}):
-            ui.Label(str, name=lbl_name, width=self.LABEL_WIDTH)
-            field = ui.StringField(name=str_name, height=self.BUTTON_SIZE).model
-            field.set_value(paths)
-            ui.Spacer(width=5.0)
-            ui.Button(image_url='resources/icons/folder.png', width=self.BUTTON_SIZE, height=self.BUTTON_SIZE, clicked_fn=lambda: self._texture_file(self._texture_field))
-        return field
-
-    def _create_combo(self, str:str, items:list, selected:bool, lbl_name:str='label', cmb_name:str='combo'):
-        with ui.HStack():
-            ui.Label(str, name=lbl_name, width=self.LABEL_WIDTH)
-            combo = ui.ComboBox(selected, name=cmb_name)
-            for item in items:
-                combo.model.append_child_item(None, ui.SimpleStringModel(item))
-        return combo
-
-    def _create_checkbox(self, str:str, checked:bool, fn, lbl_name:str='label', cb_name:str='checkbox'):
-        with ui.HStack():
-            checkbox = ui.CheckBox(name=cb_name, width=24)
-            checkbox.model.set_value(checked)
-            ui.Label(str, name=lbl_name)
-            checkbox.model.add_value_changed_fn(fn)
-        return checkbox
-        
     def _del_plane(self):
-        cams_int = self.COMBO_CAMS.model.get_item_value_model().as_int
-        cam = str(self.CAMS_LIST[cams_int])
-        backplate = f'{self._backplate_name.get_value_as_string()}_{cam}'
-        path = f'{str(self.PATHS_LIST[cams_int])}/{backplate}'
-        omni.kit.commands.execute('DeletePrims',paths=[path])
+        '''Delete BackPlate and assigned material'''
+        prim = self._get_backplate()
+        paths = []
+        if prim:
+            paths = list(set([prim.GetPath()]+UsdShade.MaterialBindingAPI(prim).GetDirectBindingRel().GetTargets()))
+        omni.kit.commands.execute('DeletePrims',paths=paths)
+
+    def _auto_create(self,do:bool=True,max:float=None):
+        prim = None
+        prim = self._get_backplate()
+        if do or prim:
+            self._set_plane(max)
 
     def _set_plane(self, max:float=None, fit:int=0):
         # implement soft range to grow slider if value is greater that max
@@ -245,7 +177,7 @@ class ExtensionWindow(ui.Window):
             if result:
                 self._old_prim_path = oldPath
         camPath = str(self.PATHS_LIST[cams_int])
-        prim_path = self.BACKPLATE = f'{camPath}/{primname}'
+        prim_path = f'{camPath}/{primname}'
         if self._old_prim_path != prim_path:
             omni.kit.commands.execute('MovePrim',path_from=str(self._old_prim_path),path_to=prim_path)
         prim = self._stage.GetPrimAtPath(prim_path)
@@ -264,7 +196,9 @@ class ExtensionWindow(ui.Window):
             prim.GetAttribute('xformOp:rotateXYZ').Set(Vec3d(90,0,180))
         else:
             prim.GetAttribute('xformOp:rotateXYZ').Set(Vec3d(0,0,0))
-        prim.GetAttribute('xformOp:scale').Set(self._set_scale(camPath,self._distance_field.model.get_value_as_float(),self.COMBO_FIT.model.get_item_value_model().get_value_as_int()))
+        canvas_attrib = prim.CreateAttribute('canvas_fill',Sdf.ValueTypeNames.Int)
+        canvas_attrib.Set(self.COMBO_FIT.model.get_item_value_model().get_value_as_int())
+        prim.GetAttribute('xformOp:scale').Set(self._calc_scale(camPath,self._distance_field.model.get_value_as_float(),prim.GetAttribute('canvas_fill').Get()))
         # Material fun
         # Use carb.tokens to resolve path to mdl
         rootpath = carb.tokens.get_tokens_interface().resolve("${meadhunt.mesh.backplate}")
@@ -292,30 +226,162 @@ class ExtensionWindow(ui.Window):
             if not shaderprim.GetAttribute('inputs:dbl_sided').Get():
                 shaderprim.CreateAttribute('inputs:dbl_sided',Sdf.ValueTypeNames.Bool)
             shaderprim.GetAttribute('inputs:dbl_sided').Set(self._cb_dblsided.model.get_value_as_bool())
-            inputs = UsdShade.Shader(shaderobj).GetInputs()
-            for input in inputs:
-                if input.GetBaseName() == 'emission_image':
-                    inputimage = input
-                    isimage = True
-                    break
-            if inputimage == None and not isimage:
+            inputimage = UsdShade.Shader(shaderobj).GetInput('emission_image')
+            if inputimage == 'emission_image':
+                isimage = True
+            if not inputimage and not isimage:
                 omni.usd.create_material_input(mtlprim,'emission_image',Sdf.AssetPath(self._texture_field.get_value_as_string()),Sdf.ValueTypeNames.Asset)
                 omni.kit.commands.execute('BindMaterial',prim_path=[prim_path],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
-                inputs = UsdShade.Shader(shaderobj).GetInputs()
-                for input in inputs:
-                    if input.GetBaseName() == 'emission_image':
-                        inputimage = input
-                        isimage = True
-                        break
+                input = UsdShade.Shader(shaderobj).GetInput('emission_image')   
+                if inputimage:
+                    isimage = True
             else:
                 prim = self._stage.GetPrimAtPath(prim_path)
                 if not len(UsdShade.MaterialBindingAPI(prim).GetDirectBindingRel().GetTargets()):
                     omni.kit.commands.execute('BindMaterial',prim_path=[str(prim_path)],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
-
-            if inputimage != None and isimage and self._texture_field.get_value_as_string() != input.Get():
-                    input.Set(Sdf.AssetPath(self._texture_field.get_value_as_string()))
+            if inputimage != None and isimage and self._texture_field.get_value_as_string() != inputimage.Get().path:
+                inputimage.Set(Sdf.AssetPath(self._texture_field.get_value_as_string()))
         else:
             print("ERROR: File missing ",os.path.abspath(mdlfile))
+# 
+# UI Defs and methods
+# 
+    def _build_ui(self):
+        with self.frame:
+            with ui.ScrollingFrame(horizontal_scrollbar_policy=ui.ScrollBarPolicy.SCROLLBAR_ALWAYS_OFF,vertical_scrollbar_policy=ui.ScrollBarPolicy.SCROLLBAR_ALWAYS_ON):
+                with ui.VStack(height=0):
+                    with ui.VStack(spacing=5, name='frame_v_stack'):
+                        self.COMBO_CAMS = self._create_combo('Cameras:', self.CAMS_LIST, 0)
+                        self.COMBO_CAMS.set_mouse_pressed_fn(lambda a,b,c,d:self._fill_combo(self.COMBO_CAMS))
+                        self.COMBO_CAMS.model.get_item_value_model().add_value_changed_fn(lambda a: self._fill_ui(self._get_backplate()))
+                        self._texture_field = self._create_path(str='Image:',paths='')
+                        with ui.HStack():
+                            ui.Label('Distance:', name='distLbl', width=self.LABEL_WIDTH)
+                            self._distance_field = ui.FloatField(width=50)
+                            ui.Spacer(width=5.0)
+                            self._distance_slider = ui.FloatSlider(min=2, max=1000, step=1.0)
+                            # Link field and slider
+                            self._distance_slider.model = self._distance_field.model
+                            self._distance_slider.model.set_value(200.0)
+                            self._distance_field.model.add_value_changed_fn(lambda a: self._auto_create(do=self._cb_create.model.get_value_as_bool(),max=a.get_value_as_float()))
+                        with ui.ZStack(height=240):
+                            ui.Rectangle(style={"background_color":0xFF212121,"border_radius":7.5})
+                            with ui.VStack():
+                                ui.Spacer(height=25)
+                                with ui.ZStack():
+                                    with ui.HStack():
+                                        ui.Spacer(width=4)
+                                        ui.Rectangle(height=211,style={"background_color":0xFF383838,"border_radius":5.0})
+                                        ui.Spacer(width=4)
+                                    with ui.VStack():
+                                        ui.Spacer(height=5)
+                                        with ui.HStack():
+                                            ui.Spacer(width=10)
+                                            with ui.VStack(spacing=5):
+                                                with ui.HStack():
+                                                    ui.Label('Name Root:', name='nameLbl', width=self.LABEL_WIDTH)
+                                                    self._backplate_name = ui.StringField(name='namefield', height=self.BUTTON_SIZE).model
+                                                    self._backplate_name.set_value('BackPlate')
+                                                self.COMBO_FIT = self._create_combo('Canvas Fill:', ['Fit Height','Fit Width'], 0)
+                                                self.COMBO_FIT.model.get_item_value_model().add_value_changed_fn(lambda a:self._auto_create(self._cb_create.model.get_value_as_bool()))
+                                                self._cb_create = self._create_checkbox('Auto Create', True, (lambda a:self._auto_create(a.get_value_as_bool())))
+                                                self._cb_dblsided = self._create_checkbox('Double Sided', False, (lambda a:self._auto_create(self._cb_create.model.get_value_as_bool())))
+                                                self._cb_shadows = self._create_checkbox('Cast Shadows', True, (lambda a:self._auto_create(self._cb_create.model.get_value_as_bool())))
+                                                self._cb_secondary = self._create_checkbox('Invisible To Secondary Rays', False, (lambda a:self._auto_create(self._cb_create.model.get_value_as_bool())))
+                                                self._cb_preview = self._create_checkbox('Image Preview', True, (lambda a:self._show_preview(a.get_value_as_bool())))
+                                                with ui.HStack():
+                                                    self.btn_click = ui.Button('Set BackPlate', name='BtnClick', clicked_fn=lambda: self._fill_ui(self._get_backplate(),force=True))
+                                                    self.btn_delete = ui.Button('Delete BackPlate', name='DelClick', clicked_fn=lambda: self._del_plane())
+                                            ui.Spacer(width=10)
+                                        ui.Spacer(width=2.5)
+                            with ui.VStack():
+                                ui.Spacer(height=5)
+                                with ui.HStack():
+                                    ui.Spacer(width=10)
+                                    ui.Label('BackPlate Options',alignment=ui.Alignment.LEFT_TOP)
+
+    def _fill_ui(self, prim:Usd.Prim=None, force:bool=False):
+        if prim:
+            mtl = UsdShade.MaterialBindingAPI(prim).GetDirectBindingRel().GetTargets()[0]
+            shaderprim = self._stage.GetPrimAtPath(str(mtl)+'/Shader')
+            prim_img = shaderprim.GetAttribute('inputs:emission_image').Get().path
+            prim_dist = -prim.GetAttribute('xformOp:translate').Get()[2]
+            prim_root = prim.GetName().split('_')[0]
+            prim_canvas = prim.GetAttribute('canvas_fill').Get()
+            prim_dbl = shaderprim.GetAttribute('inputs:dbl_sided').Get()
+            prim_shdw = not prim.GetAttribute('primvars:doNotCastShadows').Get()
+            prim_secondary= prim.GetAttribute('primvars:invisibleToSecondaryRays').Get()
+            if prim_img != None:
+                self._texture_field.set_value(prim_img)
+            if prim_dist != None:
+                self._distance_slider.model.set_value(prim_dist)
+            if prim_root != None:
+                self._backplate_name.set_value(prim_root)
+            if prim_canvas != None:
+                self.COMBO_FIT.model.get_item_value_model().set_value(prim_canvas)
+            if prim_dbl != None:
+                self._cb_dblsided.model.set_value(prim_dbl)
+            if prim_shdw != None:
+                self._cb_shadows.model.set_value(prim_shdw)
+            if prim_secondary != None:
+                self._cb_secondary.model.set_value(prim_secondary)
+            self._auto_create(True)
+        else:
+            if force:
+                self._auto_create(True)
+            else:
+                self._auto_create(self._cb_create.model.get_value_as_bool())
+
+    def _fill_combo(self, combo:ui.ComboBox):
+        '''Fill Combo List'''
+        # Get the current index of the selected item
+        currentIndex = combo.model.get_item_value_model().as_int
+        # # Get the current name of the item
+        try:
+            currentItem = self.CAMS_LIST[currentIndex]
+        except IndexError:
+            currentItem = 0
+        self._get_cameras()
+        # Get the new Index based on the name
+        # Use try except in case camera has been deleted
+        # Fallback to 0 if not in the list
+        try:
+            newIndex = self.CAMS_LIST.index(currentItem)
+        except ValueError:
+            newIndex = 0
+        # Clear the list
+        for items in combo.model.get_item_children():
+            combo.model.remove_item(items)
+        # Rebuild the list with the new list
+        for item in self.CAMS_LIST:
+            combo.model.append_child_item(None, ui.SimpleStringModel(item))
+        # Set the new index value so the selection stays with the name not the index value
+        combo.model.get_item_value_model().set_value(newIndex)
+
+    def _create_path(self, str:str, paths:str, lbl_name:str='label', str_name:str='path'):
+        with ui.HStack(style={'Button':{'margin':0.0}}):
+            ui.Label(str, name=lbl_name, width=self.LABEL_WIDTH)
+            field = ui.StringField(name=str_name, height=self.BUTTON_SIZE).model
+            field.set_value(paths)
+            ui.Spacer(width=5.0)
+            ui.Button(image_url='resources/icons/folder.png', width=self.BUTTON_SIZE, height=self.BUTTON_SIZE, clicked_fn=lambda: self._texture_file(self._texture_field))
+        return field
+
+    def _create_combo(self, str:str, items:list, selected:bool, lbl_name:str='label', cmb_name:str='combo'):
+        with ui.HStack():
+            ui.Label(str, name=lbl_name, width=self.LABEL_WIDTH)
+            combo = ui.ComboBox(selected, name=cmb_name)
+            for item in items:
+                combo.model.append_child_item(None, ui.SimpleStringModel(item))
+        return combo
+
+    def _create_checkbox(self, str:str, checked:bool, fn, lbl_name:str='label', cb_name:str='checkbox'):
+        with ui.HStack():
+            checkbox = ui.CheckBox(name=cb_name, width=24)
+            checkbox.model.set_value(checked)
+            ui.Label(str, name=lbl_name)
+            checkbox.model.add_value_changed_fn(fn)
+        return checkbox
         
     def _fix_path(self, str:str):
         txt = re.split(r'[/\\]',str)
@@ -341,7 +407,7 @@ class ExtensionWindow(ui.Window):
 
             if self._file_return:
                 field.set_value(self._file_return)
-                self._set_plane()
+                self._auto_create(self._cb_create.model.get_value_as_bool())
                 if self._open_file_dialog:
                     self._open_file_dialog.hide()
 
