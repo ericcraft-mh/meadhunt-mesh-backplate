@@ -192,7 +192,8 @@ class ExtensionWindow(ui.Window):
                             self._cb_shadows = self._create_checkbox('Cast Shadows', True, (lambda a:self._set_plane()))
                             self._cb_secondary = self._create_checkbox('Invisible To Secondary Rays', False, (lambda a:self._set_plane()))
                             self._cb_preview = self._create_checkbox('Image Preview', True, (lambda a:self._show_preview(a.get_value_as_bool())))
-
+                            self.btn_delete = ui.Button('Delete BackPlate', name='DelClick', clicked_fn=lambda: self._del_plane())
+        
                 ui.Spacer(height=2)
                 self.btn_click = ui.Button('Set BackPlate', name='BtnClick', clicked_fn=lambda: self._set_plane())
 
@@ -220,6 +221,13 @@ class ExtensionWindow(ui.Window):
             ui.Label(str, name=lbl_name)
             checkbox.model.add_value_changed_fn(fn)
         return checkbox
+        
+    def _del_plane(self):
+        cams_int = self.COMBO_CAMS.model.get_item_value_model().as_int
+        cam = str(self.CAMS_LIST[cams_int])
+        backplate = f'{self._backplate_name.get_value_as_string()}_{cam}'
+        path = f'{str(self.PATHS_LIST[cams_int])}/{backplate}'
+        omni.kit.commands.execute('DeletePrims',paths=[path])
 
     def _set_plane(self, max:float=None, fit:int=0):
         # implement soft range to grow slider if value is greater that max
