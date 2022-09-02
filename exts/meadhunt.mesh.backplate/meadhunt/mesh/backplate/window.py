@@ -226,13 +226,14 @@ class ExtensionWindow(ui.Window):
             if not shaderprim.GetAttribute('inputs:dbl_sided').Get():
                 shaderprim.CreateAttribute('inputs:dbl_sided',Sdf.ValueTypeNames.Bool)
             shaderprim.GetAttribute('inputs:dbl_sided').Set(self._cb_dblsided.model.get_value_as_bool())
-            inputimage = UsdShade.Shader(shaderobj).GetInput('emission_image')
-            if inputimage == 'emission_image':
-                isimage = True
-            if not inputimage and not isimage:
+            inputimage = shaderprim.GetAttribute('inputs:emission_image')
+            if inputimage.Get() != None:
+                if inputimage.Get().path != '':
+                    isimage = True
+            if inputimage.Get() == None or not isimage:
                 omni.usd.create_material_input(mtlprim,'emission_image',Sdf.AssetPath(self._texture_field.get_value_as_string()),Sdf.ValueTypeNames.Asset)
                 omni.kit.commands.execute('BindMaterial',prim_path=[prim_path],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
-                input = UsdShade.Shader(shaderobj).GetInput('emission_image')   
+                inputimage = UsdShade.Shader(shaderobj).GetInput('emission_image')   
                 if inputimage:
                     isimage = True
             else:
@@ -241,6 +242,8 @@ class ExtensionWindow(ui.Window):
                     omni.kit.commands.execute('BindMaterial',prim_path=[str(prim_path)],material_path=Sdf.Path(mtlpath),strength='weakerThanDescendants')
             if inputimage != None and isimage and self._texture_field.get_value_as_string() != inputimage.Get().path:
                 inputimage.Set(Sdf.AssetPath(self._texture_field.get_value_as_string()))
+            if inputimage != None and isimage:
+                self._show_preview(self._cb_preview.model.get_value_as_bool())
         else:
             print("ERROR: File missing ",os.path.abspath(mdlfile))
 # 
@@ -255,6 +258,9 @@ class ExtensionWindow(ui.Window):
                         self.COMBO_CAMS.set_mouse_pressed_fn(lambda a,b,c,d:self._fill_combo(self.COMBO_CAMS))
                         self.COMBO_CAMS.model.get_item_value_model().add_value_changed_fn(lambda a: self._fill_ui(self._get_backplate()))
                         self._texture_field = self._create_path(str='Image:',paths='')
+                        self._image_stack = ui.HStack(height=0)
+                        with self._image_stack:
+                            self._image = ui.Image('',alignment=ui.Alignment.CENTER,fill_policy=ui.FillPolicy.PRESERVE_ASPECT_FIT)
                         with ui.HStack():
                             ui.Label('Distance:', name='distLbl', width=self.LABEL_WIDTH)
                             self._distance_field = ui.FloatField(width=50)
@@ -299,33 +305,50 @@ class ExtensionWindow(ui.Window):
                                 with ui.HStack():
                                     ui.Spacer(width=10)
                                     ui.Label('BackPlate Options',alignment=ui.Alignment.LEFT_TOP)
+    
+    def _show_preview(self, value:bool=None):
+        if value == None:
+            value = self._cb_preview.model.get_value_as_bool()
+        if value and os.path.exists(self._texture_field.get_value_as_string()):
+            self._image_stack.height = ui.Length(128)
+            self._image.source_url = self._texture_field.get_value_as_string()
+        else:
+            self._image_stack.height = ui.Length(0)
+            self._image.source_url = ''
 
     def _fill_ui(self, prim:Usd.Prim=None, force:bool=False):
+        mtl = shaderprim = prim_img = prim_dist = prim_root = prim_canvas = prim_dbl = prim_shdw = prim_secondary = None
         if prim:
-            mtl = UsdShade.MaterialBindingAPI(prim).GetDirectBindingRel().GetTargets()[0]
-            shaderprim = self._stage.GetPrimAtPath(str(mtl)+'/Shader')
-            prim_img = shaderprim.GetAttribute('inputs:emission_image').Get().path
-            prim_dist = -prim.GetAttribute('xformOp:translate').Get()[2]
-            prim_root = prim.GetName().split('_')[0]
-            prim_canvas = prim.GetAttribute('canvas_fill').Get()
-            prim_dbl = shaderprim.GetAttribute('inputs:dbl_sided').Get()
-            prim_shdw = not prim.GetAttribute('primvars:doNotCastShadows').Get()
-            prim_secondary= prim.GetAttribute('primvars:invisibleToSecondaryRays').Get()
-            if prim_img != None:
-                self._texture_field.set_value(prim_img)
-            if prim_dist != None:
-                self._distance_slider.model.set_value(prim_dist)
-            if prim_root != None:
-                self._backplate_name.set_value(prim_root)
-            if prim_canvas != None:
-                self.COMBO_FIT.model.get_item_value_model().set_value(prim_canvas)
-            if prim_dbl != None:
-                self._cb_dblsided.model.set_value(prim_dbl)
-            if prim_shdw != None:
-                self._cb_shadows.model.set_value(prim_shdw)
-            if prim_secondary != None:
-                self._cb_secondary.model.set_value(prim_secondary)
-            self._auto_create(True)
+            mtl = UsdShade.MaterialBindingAPI(prim).GetDirectBindingRel().GetTargets()
+            if len(mtl) > 0:
+                shaderprim = self._stage.GetPrimAtPath(str(mtl[0])+'/Shader')
+                prim_img = shaderprim.GetAttribute('inputs:emission_image').Get().path
+                prim_dist = -prim.GetAttribute('xformOp:translate').Get()[2]
+                prim_root = prim.GetName().split('_')[0]
+                prim_canvas = prim.GetAttribute('canvas_fill').Get()
+                prim_dbl = shaderprim.GetAttribute('inputs:dbl_sided').Get()
+                prim_shdw = not prim.GetAttribute('primvars:doNotCastShadows').Get()
+                prim_secondary= prim.GetAttribute('primvars:invisibleToSecondaryRays').Get()
+                if prim_img != None:
+                    self._texture_field.set_value(prim_img)
+                if prim_dist != None:
+                    self._distance_slider.model.set_value(prim_dist)
+                if prim_root != None:
+                    self._backplate_name.set_value(prim_root)
+                if prim_canvas != None:
+                    self.COMBO_FIT.model.get_item_value_model().set_value(prim_canvas)
+                if prim_dbl != None:
+                    self._cb_dblsided.model.set_value(prim_dbl)
+                if prim_shdw != None:
+                    self._cb_shadows.model.set_value(prim_shdw)
+                if prim_secondary != None:
+                    self._cb_secondary.model.set_value(prim_secondary)
+                self._auto_create(True)
+            else:
+                if force:
+                    self._auto_create(True)
+                else:
+                    self._auto_create(self._cb_create.model.get_value_as_bool())
         else:
             if force:
                 self._auto_create(True)
@@ -407,7 +430,7 @@ class ExtensionWindow(ui.Window):
 
             if self._file_return:
                 field.set_value(self._file_return)
-                self._auto_create(self._cb_create.model.get_value_as_bool())
+                self._auto_create(True)
                 if self._open_file_dialog:
                     self._open_file_dialog.hide()
 
