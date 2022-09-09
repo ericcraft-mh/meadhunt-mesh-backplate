@@ -60,6 +60,10 @@ To add this extension to your Omniverse app:
 1. Go into: Extension Manager -> Gear Icon -> Extension Search Path
 2. Add this as a search path: `git://github.com/ericcraft-mh/meadhunt-mesh-backplate.git?branch=main&dir=exts`
 
+## To-Do List
+- Update BackPlate on Camera parameter changes.
+- Implement in viewport controls for adjusting BackPlate.
+
 ## App Link Setup
 If `app` folder link doesn't exist or broken it can be created again. For better developer experience it is recommended to create a folder link named `app` to the *Omniverse Kit* app installed from *Omniverse Launcher*. Convenience script to use is included.
 
