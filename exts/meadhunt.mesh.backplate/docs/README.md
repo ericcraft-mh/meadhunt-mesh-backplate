@@ -4,6 +4,8 @@
 ### Inspiration
 BackPlate was created based on the inspiration of the Maya image plane and Martin Breidt's imagePlane maxscript.
 
+It also provided me a chance to create a tool that is lacking in AEC Visualization, while learning Python, USD, and Kit APIs/workflows. Tools like Enscape, Twinmotion, and Lumion don't really have ways to easily align a real photo with your digital world and all lack a way to extend the tool. With Omniverse we have a way to extend our visualization tools, and BackPlate was born out of this.
+
 ### About
 This tool was created so users can place a card with a background image (BackPlate) which is linked to the camera. These cards are typically used to align Omniverse cameras and models with real images. The card will match the original aspect ratio of the selected Texture and the user can select to maximize the Height or Width of the card to align with the viewport canvas. The card will properly scale based on the distance from the camera to ensure proper alignment. All materials are created by the tool using a custom emissive-only MDL file.
 
