@@ -1,3 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 /exts/meadhunt.mesh.backplate/data/video_backplate.mp4 export-ignore
+/exts/meadhunt.mesh.backplate/data/EricCraft_@EricCraft_MH.mp4 export-ignore
+/exts/meadhunt.mesh.backplate/data/EricCraft_@EricCraft_MH.png export-ignore
