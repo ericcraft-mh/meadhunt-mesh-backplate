@@ -6,7 +6,7 @@ import math
 from PIL import Image
 
 from pxr import Usd, UsdGeom, Sdf, UsdShade, Tf
-from pxr.Gf import Vec3d
+from pxr.Gf import Vec3d,Vec2d
 
 import carb.tokens
 
@@ -75,9 +75,12 @@ class ExtensionWindow(ui.Window):
         '''Get and Return resolution from RenderProduct_Viewport'''
         # Make sure stage is set
         self._get_stage()
+        view_res = None
         # Get scene render resolution
-        renderproduct = self._stage.GetPrimAtPath(Sdf.Path('/Render/RenderProduct_Viewport'))
-        view_res = renderproduct.GetAttribute('resolution').Get()
+        # Find RenderProduct Prim as Child of Render Prim
+        for prim in self._stage.Traverse():
+            if prim.GetParent().GetName() == 'Render' and prim.HasAttribute('resolution'):
+                view_res = prim.GetAttribute('resolution').Get()
         return view_res
         
     def _get_cameras(self):

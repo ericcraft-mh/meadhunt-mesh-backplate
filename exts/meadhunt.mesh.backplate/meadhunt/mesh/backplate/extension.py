@@ -1,5 +1,5 @@
 __all__ = ["BackPlate"]
-import omni.ext
+import omni
 import omni.ui as ui
 import omni.kit.ui
 
@@ -18,7 +18,7 @@ class BackPlate(omni.ext.IExt):
 
     def on_startup(self, ext_id):
         print("[meadhunt.mesh.backplate] BackPlate startup")
-
+        self._ext_id = ext_id
         self._menu_path = f"Window/Mead & Hunt/{self.WINDOW_TITLE}"
         self._window = None
         self._menu = omni.kit.ui.get_editor_menu().add_item(self._menu_path, self._on_menu_click, True)
