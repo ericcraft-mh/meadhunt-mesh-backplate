@@ -13,8 +13,8 @@ class BackPlate(omni.ext.IExt):
 
     WINDOW_TITLE = "BackPlate"
     
-    def __init__(self):
-        pass
+#    def __init__(self):
+#        pass
 
     def on_startup(self, ext_id):
         print("[meadhunt.mesh.backplate] BackPlate startup")
